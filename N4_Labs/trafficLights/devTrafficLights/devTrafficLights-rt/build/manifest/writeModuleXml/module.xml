@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module name="devTrafficLights-rt" bajaVersion="0" vendor="tridiumuniversity" vendorVersion="1.0" description="A training module" preferredSymbol="dtl" nre="true" autoload="true" installable="true" buildMillis="%%BUILD_MILLIS%%" buildHost="US-SO10-NA87615" moduleName="devTrafficLights" runtimeProfile="rt">
+ <dependencies>
+  <dependency name="baja" vendor="Tridium" vendorVersion="4.14"/>
+ </dependencies>
+ <dirs/>
+ <installation/>
+ <types>
+  <type class="com.tridiumuniversity.devTrafficLights.BFirstComponent" name="FirstComponent"/>
+  <type class="com.tridiumuniversity.devTrafficLights.BSecondComponent" name="SecondComponent"/>
+  <type class="com.tridiumuniversity.devTrafficLights.BFile" name="File"/>
+  <type class="com.tridiumuniversity.devTrafficLights.BTrafficLight" name="TrafficLight"/>
+  <type class="com.tridiumuniversity.devTrafficLights.BTrafficLightState" name="TrafficLightState"/>
+ </types>
+ <permissions>
+  <niagara-permission-groups type="all"/>
+  <niagara-permission-groups type="workbench"/>
+  <niagara-permission-groups type="station"/>
+ </permissions>
+ <moduleParts>
+  <modulePart name="devTrafficLights-wb" runtimeProfile="wb"/>
+ </moduleParts>
+</module>

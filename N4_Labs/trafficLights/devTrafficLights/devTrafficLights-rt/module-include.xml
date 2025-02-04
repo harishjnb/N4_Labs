@@ -1,0 +1,8 @@
+<types>
+  <!--com.tridiumuniversity.devTrafficLights-->
+  <type class="com.tridiumuniversity.devTrafficLights.BFirstComponent" name="FirstComponent"/>
+  <type class="com.tridiumuniversity.devTrafficLights.BSecondComponent" name="SecondComponent"/>
+  <type class="com.tridiumuniversity.devTrafficLights.BFile" name="File"/>
+  <type class="com.tridiumuniversity.devTrafficLights.BTrafficLight" name="TrafficLight"/>
+  <type class="com.tridiumuniversity.devTrafficLights.BTrafficLightState" name="TrafficLightState"/>
+</types>
