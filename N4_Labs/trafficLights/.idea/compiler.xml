@@ -14,10 +14,20 @@
       </profile>
       <profile name="Gradle Imported" enabled="true">
         <outputRelativeToContentRoot value="true" />
-        <option name="niagara.module.root" value="F:\Niagara\N4_Labs\trafficLights\devTrafficLights\devTrafficLights-wb" />
+        <option name="niagara.module.root" value="F:\Niagara\N4_Labs_Home\N4_Labs\trafficLights\devTrafficLights\devTrafficLights-rt" />
         <option name="niagara.test.roots" value="srcTest=java" />
         <processorPath useClasspath="false">
-          <entry name="$PROJECT_DIR$/../../niagara-4.14.0.162/bin/ext/nre.jar" />
+          <entry name="$PROJECT_DIR$/../../../niagara-4.14.0.162/bin/ext/nre.jar" />
+        </processorPath>
+        <module name="trafficLights.devTrafficLights.devTrafficLights-rt.main" />
+        <module name="devTrafficLights.devTrafficLights-rt.moduleTest" />
+      </profile>
+      <profile name="Gradle Imported" enabled="true">
+        <outputRelativeToContentRoot value="true" />
+        <option name="niagara.module.root" value="F:\Niagara\N4_Labs_Home\N4_Labs\trafficLights\devTrafficLights\devTrafficLights-wb" />
+        <option name="niagara.test.roots" value="srcTest=java" />
+        <processorPath useClasspath="false">
+          <entry name="$PROJECT_DIR$/../../../niagara-4.14.0.162/bin/ext/nre.jar" />
         </processorPath>
         <module name="devTrafficLights.devTrafficLights-wb.moduleTest" />
         <module name="devTrafficLights.devTrafficLights-wb.main" />
