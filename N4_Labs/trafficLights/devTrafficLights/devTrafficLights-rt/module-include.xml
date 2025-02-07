@@ -5,4 +5,11 @@
   <type class="com.tridiumuniversity.devTrafficLights.BFile" name="File"/>
   <type class="com.tridiumuniversity.devTrafficLights.BTrafficLight" name="TrafficLight"/>
   <type class="com.tridiumuniversity.devTrafficLights.BTrafficLightState" name="TrafficLightState"/>
+  <type class="com.tridiumuniversity.devTrafficLights.BDemoWorker" name="DemoWorker"/>
+  <type class="com.tridiumuniversity.devTrafficLights.BFastComponent" name="FastComponent"/>
+  <type class="com.tridiumuniversity.devTrafficLights.BFastComponentWithWorker" name="FastComponentWithWorker"/>
+  <type class="com.tridiumuniversity.devTrafficLights.BSlowComponent" name="SlowComponent"/>
+  <type class="com.tridiumuniversity.devTrafficLights.BSlowComponentWithAsyncAction" name="SlowComponentWithAsyncAction"/>
+  <type class="com.tridiumuniversity.devTrafficLights.BTrafficLightJob" name="TrafficLightJob"/>
+  <type class="com.tridiumuniversity.devTrafficLights.BTrafficLightService" name="TrafficLightService"/>
 </types>

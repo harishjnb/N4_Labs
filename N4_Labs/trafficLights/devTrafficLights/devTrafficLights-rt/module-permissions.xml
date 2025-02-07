@@ -1,3 +1,7 @@
+<!--
+  ~  Copyright 2023 Tridium, Inc. All Rights Reserved. This code is supplied as example code only and is not intended for use in production.
+  -->
+
 <permissions>
   <niagara-permission-groups type="all">
     <!-- Insert any global permissions here. -->
@@ -10,10 +14,14 @@
     <!--<name>NETWORK_COMMUNICATION</name>-->
     <!--<purposeKey>Outside access for Driver</purposeKey>-->
     <!--<parameters>-->
-      <!--<parameter name="hosts" value="127.0.0.1"/>-->
-      <!--<parameter name="ports" value="*"/>-->
-      <!--<parameter name="type" value="all"/>-->
+    <!--<parameter name="hosts" value="127.0.0.1"/>-->
+    <!--<parameter name="ports" value="*"/>-->
+    <!--<parameter name="type" value="all"/>-->
     <!--</parameters>-->
     <!--</req-permission>-->
+    <req-permission>
+      <name>MANAGE_EXECUTION</name>
+      <purposeKey>Stop running station threads during station shutdown</purposeKey>
+    </req-permission>
   </niagara-permission-groups>
 </permissions>

@@ -11,11 +11,23 @@
   <type class="com.tridiumuniversity.devTrafficLights.BFile" name="File"/>
   <type class="com.tridiumuniversity.devTrafficLights.BTrafficLight" name="TrafficLight"/>
   <type class="com.tridiumuniversity.devTrafficLights.BTrafficLightState" name="TrafficLightState"/>
+  <type class="com.tridiumuniversity.devTrafficLights.BDemoWorker" name="DemoWorker"/>
+  <type class="com.tridiumuniversity.devTrafficLights.BFastComponent" name="FastComponent"/>
+  <type class="com.tridiumuniversity.devTrafficLights.BFastComponentWithWorker" name="FastComponentWithWorker"/>
+  <type class="com.tridiumuniversity.devTrafficLights.BSlowComponent" name="SlowComponent"/>
+  <type class="com.tridiumuniversity.devTrafficLights.BSlowComponentWithAsyncAction" name="SlowComponentWithAsyncAction"/>
+  <type class="com.tridiumuniversity.devTrafficLights.BTrafficLightJob" name="TrafficLightJob"/>
+  <type class="com.tridiumuniversity.devTrafficLights.BTrafficLightService" name="TrafficLightService"/>
  </types>
  <permissions>
   <niagara-permission-groups type="all"/>
   <niagara-permission-groups type="workbench"/>
-  <niagara-permission-groups type="station"/>
+  <niagara-permission-groups type="station">
+   <req-permission>
+    <name>MANAGE_EXECUTION</name>
+    <purposeKey>Stop running station threads during station shutdown</purposeKey>
+   </req-permission>
+  </niagara-permission-groups>
  </permissions>
  <moduleParts>
   <modulePart name="devTrafficLights-wb" runtimeProfile="wb"/>

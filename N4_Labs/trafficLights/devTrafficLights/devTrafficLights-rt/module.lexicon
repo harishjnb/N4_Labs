@@ -1,3 +1,4 @@
 #
 # Lexicon for the devTrafficLights module.
 #
+trafficLightJob.processingTrafficLight=Processing traffic light {0}

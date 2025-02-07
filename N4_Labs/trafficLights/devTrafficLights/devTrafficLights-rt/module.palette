@@ -5,7 +5,11 @@
      <p m="dtl=devTrafficLights" t="dtl:SecondComponent" n="SecondComponent" />
       <p m="dtl=devTrafficLights" t="dtl:File" n="File" />
       <p m="dtl=devTrafficLights" t="dtl:TrafficLight" n="TrafficLight" />
-
+      <p m="dtl=devTrafficLights" t="dtl:SlowComponent" n="SlowComponent" />
+      <p m="dtl=devTrafficLights" t="dtl:SlowComponentWithAsyncAction" n="SlowComponentWithAsyncAction" />
+      <p m="dtl=devTrafficLights" t="dtl:FastComponent" n="FastComponent" />
+      <p m="dtl=devTrafficLights" t="dtl:FastComponentWithWorker" n="FastComponentWithWorker" />
+      <p m="dtl=devTrafficLights" t="dtl:TrafficLightService" n="TrafficLightService" />
 
 </p>
 </bajaObjectGraph>
