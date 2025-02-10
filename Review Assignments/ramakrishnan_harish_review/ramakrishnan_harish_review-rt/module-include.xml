@@ -1,0 +1,6 @@
+<types>
+  <!--com.tridiumuniversity.ramakrishnan_harish_review-->
+  <type class="com.tridiumuniversity.ramakrishnan_harish_review.BRectangle" name="Rectangle"/>
+  <type class="com.tridiumuniversity.ramakrishnan_harish_review.BReviewService" name="ReviewService"/>
+  <type class="com.tridiumuniversity.ramakrishnan_harish_review.BSubWorker" name="SubWorker"/>
+</types>

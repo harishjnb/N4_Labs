@@ -198,7 +198,6 @@ public void changed(Property prop, Context cx)
         if(areaVal>this.getThreshold())
         {
             fireDetected(BDouble.make(areaVal));
-            logger.log(Level.INFO,"Length is "+getLength()+" width is "+getWidth());
         }
 
     }

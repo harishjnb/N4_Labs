@@ -1,0 +1,8 @@
+.gradle/  
+.idea/  
+.project/  
+.settings/  
+.project  
+.class
+build
+node_modules
