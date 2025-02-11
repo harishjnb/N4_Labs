@@ -24,6 +24,16 @@
       </profile>
       <profile name="Gradle Imported" enabled="true">
         <outputRelativeToContentRoot value="true" />
+        <option name="niagara.module.root" value="F:\Niagara\N4_Labs_Home\N4_Labs\trafficLights\devTrafficLights\devTrafficLights-ux" />
+        <option name="niagara.test.roots" value="srcTest=java" />
+        <processorPath useClasspath="false">
+          <entry name="$PROJECT_DIR$/../../../niagara-4.14.0.162/bin/ext/nre.jar" />
+        </processorPath>
+        <module name="devTrafficLights.devTrafficLights-ux.moduleTest" />
+        <module name="devTrafficLights.devTrafficLights-ux.main" />
+      </profile>
+      <profile name="Gradle Imported" enabled="true">
+        <outputRelativeToContentRoot value="true" />
         <option name="niagara.module.root" value="F:\Niagara\N4_Labs_Home\N4_Labs\trafficLights\devTrafficLights\devTrafficLights-wb" />
         <option name="niagara.test.roots" value="srcTest=java" />
         <processorPath useClasspath="false">

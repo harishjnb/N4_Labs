@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/devTrafficLights/devTrafficLights-rt/devTrafficLights.devTrafficLights-rt.main.iml" filepath="$PROJECT_DIR$/.idea/modules/devTrafficLights/devTrafficLights-rt/devTrafficLights.devTrafficLights-rt.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/devTrafficLights/devtrafficLights-ux/devTrafficLights.devTrafficLights-ux.main.iml" filepath="$PROJECT_DIR$/.idea/modules/devTrafficLights/devtrafficLights-ux/devTrafficLights.devTrafficLights-ux.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/devTrafficLights/devTrafficLights-rt/trafficLights.devTrafficLights.devTrafficLights-rt.main.iml" filepath="$PROJECT_DIR$/.idea/modules/devTrafficLights/devTrafficLights-rt/trafficLights.devTrafficLights.devTrafficLights-rt.main.iml" />
     </modules>
   </component>

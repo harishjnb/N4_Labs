@@ -125,8 +125,8 @@ public final class BReviewService extends BAbstractService implements BIRestrict
   @Override
   public IFuture post(Action action, BValue value, Context cx) {
     if (updateCount.equals(action)) {
-//      getWorker().postAsync(new Invocation(this,action,value,cx));
-      getWorker().postAsync(new Invocation(this, updateCount,value,cx));
+      getWorker().postAsync(new Invocation(this,action,value,cx));
+//      getWorker().postAsync(new Invocation(this, updateCount,value,cx));
     }
 
     return null;

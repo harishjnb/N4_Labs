@@ -12,4 +12,5 @@
   <type class="com.tridiumuniversity.devTrafficLights.BSlowComponentWithAsyncAction" name="SlowComponentWithAsyncAction"/>
   <type class="com.tridiumuniversity.devTrafficLights.BTrafficLightJob" name="TrafficLightJob"/>
   <type class="com.tridiumuniversity.devTrafficLights.BTrafficLightService" name="TrafficLightService"/>
+  <type class="com.tridiumuniversity.devTrafficLights.BNumericWritableEditor" name="NumericWritableEditor"/>
 </types>

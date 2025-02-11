@@ -12,6 +12,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/devTrafficLights/devTrafficLights-rt" />
+            <option value="$PROJECT_DIR$/devTrafficLights/devTrafficLights-ux" />
             <option value="$PROJECT_DIR$/devTrafficLights/devTrafficLights-wb" />
           </set>
         </option>

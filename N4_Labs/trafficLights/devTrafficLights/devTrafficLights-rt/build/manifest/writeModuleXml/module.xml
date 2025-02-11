@@ -18,6 +18,7 @@
   <type class="com.tridiumuniversity.devTrafficLights.BSlowComponentWithAsyncAction" name="SlowComponentWithAsyncAction"/>
   <type class="com.tridiumuniversity.devTrafficLights.BTrafficLightJob" name="TrafficLightJob"/>
   <type class="com.tridiumuniversity.devTrafficLights.BTrafficLightService" name="TrafficLightService"/>
+  <type class="com.tridiumuniversity.devTrafficLights.BNumericWritableEditor" name="NumericWritableEditor"/>
  </types>
  <permissions>
   <niagara-permission-groups type="all"/>
@@ -30,6 +31,7 @@
   </niagara-permission-groups>
  </permissions>
  <moduleParts>
+  <modulePart name="devTrafficLights-ux" runtimeProfile="ux"/>
   <modulePart name="devTrafficLights-wb" runtimeProfile="wb"/>
  </moduleParts>
 </module>

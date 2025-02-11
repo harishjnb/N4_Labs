@@ -10,6 +10,7 @@
       <p m="dtl=devTrafficLights" t="dtl:FastComponent" n="FastComponent" />
       <p m="dtl=devTrafficLights" t="dtl:FastComponentWithWorker" n="FastComponentWithWorker" />
       <p m="dtl=devTrafficLights" t="dtl:TrafficLightService" n="TrafficLightService" />
+      <p m="dtl=devTrafficLights" t="dtl:NumericWritableEditor" n="NumericWritableEditor" />
 
 </p>
 </bajaObjectGraph>
