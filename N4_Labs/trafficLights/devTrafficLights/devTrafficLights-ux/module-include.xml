@@ -1,8 +1,14 @@
 <types>
-  <type name="NumericWritableEditorWidget" class="com.tridiumuniversity.devtrafficlights.ux.BNumericWritableEditorWidget">
+  <!--com.tridiumuniversity.devtrafficlights.ux-->
+  <type class="com.tridiumuniversity.devtrafficlights.ux.BNumericWritableEditorWidget" name="NumericWritableEditorWidget">
     <agent>
-      <on type="devTrafficLights:NumericWritableEditor" />
+      <on type="devTrafficLights:NumericWritableEditor"/>
     </agent>
   </type>
-  <type name="DevTrafficLightsJsBuild" class="com.tridiumuniversity.devtrafficlights.ux.BDevTrafficLightsJsBuild" />
+  <type class="com.tridiumuniversity.devtrafficlights.ux.BDevTrafficLightsJsBuild" name="DevTrafficLightsJsBuild"/>
+  <type class="com.tridiumuniversity.devtrafficlights.ux.BTrafficLightWidget" name="TrafficLightWidget">
+    <agent>
+      <on type="devTrafficLights:TrafficLight"/>
+    </agent>
+  </type>
 </types>

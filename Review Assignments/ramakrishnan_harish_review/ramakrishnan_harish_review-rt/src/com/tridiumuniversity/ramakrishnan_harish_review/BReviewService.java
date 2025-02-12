@@ -7,6 +7,7 @@ import javax.baja.file.BajaFileUtil;
 import javax.baja.naming.BOrd;
 import javax.baja.nre.annotations.NiagaraAction;
 import javax.baja.nre.annotations.NiagaraProperty;
+import javax.baja.nre.annotations.NiagaraTopic;
 import javax.baja.nre.annotations.NiagaraType;
 import javax.baja.sys.*;
 import javax.baja.util.BIRestrictedComponent;
@@ -26,11 +27,12 @@ import java.io.PrintWriter;
         name="updateCount",
         flags = Flags.ASYNC
 )
+
 public final class BReviewService extends BAbstractService implements BIRestrictedComponent {
 //region /*+ ------------ BEGIN BAJA AUTO GENERATED CODE ------------ +*/
 //@formatter:off
 /*@ $com.tridiumuniversity.ramakrishnan_harish_review.BReviewService(618378013)1.0$ @*/
-/* Generated Sat Feb 08 12:42:55 EST 2025 by Slot-o-Matic (c) Tridium, Inc. 2012-2025 */
+/* Generated Tue Feb 11 09:41:30 EST 2025 by Slot-o-Matic (c) Tridium, Inc. 2012-2025 */
 
   //region Property "worker"
 

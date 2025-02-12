@@ -1,0 +1,42 @@
+/*
+ *  Copyright 2023 Tridium, Inc. All Rights Reserved. This code is supplied as example code only and is not intended for use in production.
+ */
+
+.traffic-light-widget {
+  --bg-color: #222;
+  --red-color: red;
+  --yellow-color: yellow;
+  --green-color: springgreen;
+}
+
+.traffic-light-widget .light-container {
+  fill-opacity: 1;
+  fill: var(--bg-color);
+}
+
+.traffic-light-widget .light {
+  fill-opacity: 0.1;
+}
+
+.traffic-light-widget .light:hover {
+  cursor: pointer;
+  fill-opacity: 0.5;
+}
+
+.traffic-light-widget .light.selected {
+  fill-opacity: 0.5;
+}
+
+.traffic-light-widget .light.active {
+  fill-opacity: 1;
+}
+
+.traffic-light-widget .light.red-light {
+  fill: var(--red-color);
+}
+.traffic-light-widget .light.yellow-light {
+  fill: var(--yellow-color);
+}
+.traffic-light-widget .light.green-light {
+  fill: var(--green-color);
+}
