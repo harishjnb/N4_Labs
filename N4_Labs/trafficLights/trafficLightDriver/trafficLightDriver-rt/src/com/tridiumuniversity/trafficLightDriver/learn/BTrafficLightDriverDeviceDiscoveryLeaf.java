@@ -4,6 +4,8 @@
 
 package com.tridiumuniversity.trafficLightDriver.learn;
 
+import javax.baja.nre.annotations.Facet;
+import javax.baja.nre.annotations.NiagaraProperty;
 import javax.baja.nre.annotations.NiagaraType;
 import javax.baja.registry.TypeInfo;
 import javax.baja.sys.BComponent;
@@ -12,7 +14,9 @@ import javax.baja.sys.Type;
 
 import com.tridium.ndriver.discover.BNDiscoveryLeaf;
 
+import com.tridium.ndriver.util.SfUtil;
 import com.tridiumuniversity.trafficLightDriver.BTrafficLightDriverDevice;
+import javax.baja.sys.Property;
 
 /**
  * BTrafficLightDriverDeviceDiscoveryLeaf is container class for Device elements to display in
@@ -21,13 +25,42 @@ import com.tridiumuniversity.trafficLightDriver.BTrafficLightDriverDevice;
  * @author tridiumuniversity on 12 Feb 2025
  */
 @NiagaraType
+@NiagaraProperty(
+        name="intersectionId",
+        type="String",
+        defaultValue="\"\"",
+        facets=@Facet("SfUtil.incl()")
+)
 public class BTrafficLightDriverDeviceDiscoveryLeaf
   extends BNDiscoveryLeaf
 {
 //region /*+ ------------ BEGIN BAJA AUTO GENERATED CODE ------------ +*/
 //@formatter:off
-/*@ $com.tridiumuniversity.trafficLightDriver.learn.BTrafficLightDriverDeviceDiscoveryLeaf(2979906276)1.0$ @*/
-/* Generated Wed Feb 12 11:41:20 EST 2025 by Slot-o-Matic (c) Tridium, Inc. 2012-2025 */
+/*@ $com.tridiumuniversity.trafficLightDriver.learn.BTrafficLightDriverDeviceDiscoveryLeaf(4032158471)1.0$ @*/
+/* Generated Thu Feb 13 14:40:21 EST 2025 by Slot-o-Matic (c) Tridium, Inc. 2012-2025 */
+
+  //region Property "intersectionId"
+
+  /**
+   * Slot for the {@code intersectionId} property.
+   * @see #getIntersectionId
+   * @see #setIntersectionId
+   */
+  public static final Property intersectionId = newProperty(0, "", SfUtil.incl());
+
+  /**
+   * Get the {@code intersectionId} property.
+   * @see #intersectionId
+   */
+  public String getIntersectionId() { return getString(intersectionId); }
+
+  /**
+   * Set the {@code intersectionId} property.
+   * @see #intersectionId
+   */
+  public void setIntersectionId(String v) { setString(intersectionId, v, null); }
+
+  //endregion Property "intersectionId"
 
   //region Type
 
@@ -39,8 +72,13 @@ public class BTrafficLightDriverDeviceDiscoveryLeaf
 
 //@formatter:on
 //endregion /*+ ------------ END BAJA AUTO GENERATED CODE -------------- +*/
-  public BTrafficLightDriverDeviceDiscoveryLeaf()
+public BTrafficLightDriverDeviceDiscoveryLeaf()
+{
+}
+
+  public BTrafficLightDriverDeviceDiscoveryLeaf(String intersectionId)
   {
+    setIntersectionId(intersectionId);
   }
 
   /* Called when adding new object based on this discovery leaf.   */
@@ -55,19 +93,14 @@ public class BTrafficLightDriverDeviceDiscoveryLeaf
    */
   public String getDiscoveryName()
   {
-    //
-    // TODO - specify the default name for discovery entry
-    //
-    return null;
+    return "Device " + getIntersectionId();
   }
-
 
   /* Called when adding new object based on this discovery leaf.   */
   public void updateTarget(BComponent target)
   {
-    //
-    // TODO - initialize values in new Device
-    //
+    BTrafficLightDriverDevice device = (BTrafficLightDriverDevice)target;
+    device.setIntersectionId(getIntersectionId());
   }
 
   /**
@@ -76,10 +109,12 @@ public class BTrafficLightDriverDeviceDiscoveryLeaf
    */
   public boolean isExisting(BComponent target)
   {
-    //
-    // TODO - return true if specified component represents this leaf
-    //
+    if (!(target instanceof BTrafficLightDriverDevice))
+    {
+      return false;
+    }
 
-    return false;
+    BTrafficLightDriverDevice device = (BTrafficLightDriverDevice)target;
+    return device.getIntersectionId().equalsIgnoreCase(getIntersectionId());
   }
 }

@@ -23,16 +23,11 @@ import javax.baja.status.BStatusEnum;
 import javax.baja.status.BStatusNumeric;
 import javax.baja.status.BStatusString;
 import javax.baja.status.BStatusValue;
-import javax.baja.sys.BComponent;
-import javax.baja.sys.BEnum;
-import javax.baja.sys.BFacets;
-import javax.baja.sys.Flags;
-import javax.baja.sys.Property;
-import javax.baja.sys.Sys;
-import javax.baja.sys.Type;
+import javax.baja.sys.*;
 
 import com.tridium.ndriver.discover.BNPointDiscoveryLeaf;
 import com.tridium.ndriver.util.SfUtil;
+import com.tridiumuniversity.devTrafficLights.BTrafficLightState;
 
 /**
  * BTrafficLightDriverPointDiscoveryLeaf is container class for point elements to display in
@@ -44,7 +39,7 @@ import com.tridium.ndriver.util.SfUtil;
 @NiagaraProperty(
   name = "statusValue",
   type = "BStatusValue",
-  defaultValue = "new BStatusNumeric()",
+  defaultValue = "new BStatusEnum()",
   flags = Flags.READONLY
 )
 @NiagaraProperty(
@@ -54,13 +49,19 @@ import com.tridium.ndriver.util.SfUtil;
   flags = Flags.READONLY,
   facets = @Facet(name = "SfUtil.KEY_MGR", value = "SfUtil.MGR_UNSEEN")
 )
+@NiagaraProperty(
+        name = "lightId",
+        type = "String",
+        defaultValue = "\"\"",
+        facets = @Facet("SfUtil.incl()")
+)
 public class BTrafficLightDriverPointDiscoveryLeaf
   extends BNPointDiscoveryLeaf
 {
 //region /*+ ------------ BEGIN BAJA AUTO GENERATED CODE ------------ +*/
 //@formatter:off
-/*@ $com.tridiumuniversity.trafficLightDriver.point.BTrafficLightDriverPointDiscoveryLeaf(1643154273)1.0$ @*/
-/* Generated Wed Feb 12 11:41:20 EST 2025 by Slot-o-Matic (c) Tridium, Inc. 2012-2025 */
+/*@ $com.tridiumuniversity.trafficLightDriver.point.BTrafficLightDriverPointDiscoveryLeaf(1530619367)1.0$ @*/
+/* Generated Thu Feb 13 15:15:20 EST 2025 by Slot-o-Matic (c) Tridium, Inc. 2012-2025 */
 
   //region Property "statusValue"
 
@@ -69,7 +70,7 @@ public class BTrafficLightDriverPointDiscoveryLeaf
    * @see #getStatusValue
    * @see #setStatusValue
    */
-  public static final Property statusValue = newProperty(Flags.READONLY, new BStatusNumeric(), null);
+  public static final Property statusValue = newProperty(Flags.READONLY, new BStatusEnum(), null);
 
   /**
    * Get the {@code statusValue} property.
@@ -108,6 +109,29 @@ public class BTrafficLightDriverPointDiscoveryLeaf
 
   //endregion Property "facets"
 
+  //region Property "lightId"
+
+  /**
+   * Slot for the {@code lightId} property.
+   * @see #getLightId
+   * @see #setLightId
+   */
+  public static final Property lightId = newProperty(0, "", SfUtil.incl());
+
+  /**
+   * Get the {@code lightId} property.
+   * @see #lightId
+   */
+  public String getLightId() { return getString(lightId); }
+
+  /**
+   * Set the {@code lightId} property.
+   * @see #lightId
+   */
+  public void setLightId(String v) { setString(lightId, v, null); }
+
+  //endregion Property "lightId"
+
   //region Type
 
   @Override
@@ -118,58 +142,56 @@ public class BTrafficLightDriverPointDiscoveryLeaf
 
 //@formatter:on
 //endregion /*+ ------------ END BAJA AUTO GENERATED CODE -------------- +*/
-  public BTrafficLightDriverPointDiscoveryLeaf()
+public BTrafficLightDriverPointDiscoveryLeaf()
+{
+}
+
+  public BTrafficLightDriverPointDiscoveryLeaf(String lightId)
   {
+    setLightId(lightId);
   }
 
-  // Return TypeInfo for valid new objects - match proxy type to statusValue type.
+  @Override
+  public String getDiscoveryName()
+  {
+    switch (getLightId())
+    {
+      case "n":
+      case "N":
+        return "North";
+      case "s":
+      case "S":
+        return "South";
+      case "e":
+      case "E":
+        return "East";
+      case "w":
+      case "W":
+        return "West";
+      default:
+        return getLightId();
+    }
+  }
+
   public TypeInfo[] getValidDatabaseTypes()
   {
-    Array<TypeInfo> a = new Array<>(TypeInfo.class);
-    BStatusValue sv = getStatusValue();
-
-    //
-    // TODO determine valid types for this leaf
-    //
-
-//    if(sv instanceof BStatusNumeric)
-//    {
-    a.add(BNumericPoint.TYPE.getTypeInfo());
-//      if(writable) a.add(BNumericWritable.TYPE.getTypeInfo());
-//    }
-//    if(sv instanceof BStatusBoolean)
-//    {
-//      a.add(BBooleanPoint.TYPE.getTypeInfo());
-//      if(writable) a.add(BBooleanWritable.TYPE.getTypeInfo());
-//    }
-//    if(sv instanceof BStatusString)
-//    {
-//      a.add(BStringPoint.TYPE.getTypeInfo());
-//      if(writable) a.add(BStringWritable.TYPE.getTypeInfo());
-//    }
-//    if(sv instanceof BStatusEnum)
-//    {
-//      a.add(BEnumPoint.TYPE.getTypeInfo());
-//      if(writable) a.add(BEnumWritable.TYPE.getTypeInfo());
-//    }
-
-    return a.trim();
+    return new TypeInfo[] {BEnumPoint.TYPE.getTypeInfo(), BEnumWritable.TYPE.getTypeInfo()};
   }
 
   // Call when adding new object based on this discovery leaf.  Initialize proxy.
   public void updateTarget(BComponent target)
   {
-    BControlPoint cp = (BControlPoint) target;
-    BTrafficLightDriverProxyExt pext = new BTrafficLightDriverProxyExt();
+    BControlPoint controlPoint = (BControlPoint) target;
+    BTrafficLightDriverProxyExt proxyExt = new BTrafficLightDriverProxyExt();
 
-    //
-    // TODO - initialize values in new point
-    //
+    proxyExt.setLightId(getLightId());
 
-    cp.setFacets(getFacets());
-    cp.setProxyExt(pext);
+    BEnumRange range = BEnumRange.make(BTrafficLightState.TYPE);
+    BFacets trafficLightStateFacets = BFacets.make(BFacets.RANGE, range);
+    controlPoint.setFacets(trafficLightStateFacets);
+    controlPoint.setProxyExt(proxyExt);
 
-    cp.getStatusValue().setValueValue(getStatusValue().getValueValue());
+    controlPoint.getStatusValue().setValueValue(getStatusValue().getValueValue());
   }
 
   /**
@@ -182,12 +204,9 @@ public class BTrafficLightDriverPointDiscoveryLeaf
     {
       return false;
     }
-    BControlPoint cp = (BControlPoint) target;
-    BTrafficLightDriverProxyExt pext = (BTrafficLightDriverProxyExt) cp.getProxyExt();
-    //
-    // TODO - return true if specified component represents this leaf
-    //
+    BControlPoint controlPoint = (BControlPoint) target;
+    BTrafficLightDriverProxyExt proxyExt = (BTrafficLightDriverProxyExt) controlPoint.getProxyExt();
 
-    return false;
+    return proxyExt.getLightId().equalsIgnoreCase(getLightId());
   }
 }

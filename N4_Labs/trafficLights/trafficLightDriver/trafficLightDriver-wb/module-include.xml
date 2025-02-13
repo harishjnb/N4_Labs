@@ -1,4 +1,8 @@
 <types>
   <!--com.tridiumuniversity.trafficLightDriver.ui-->
-  <type class="com.tridiumuniversity.trafficLightDriver.ui.BTrafficLightDriverPointManager" name="TrafficLightDriverPointManager"/>
+  <type class="com.tridiumuniversity.trafficLightDriver.ui.BTrafficLightDriverPointManager" name="TrafficLightDriverPointManager">
+    <agent>
+      <on type="trafficLightDriver:TrafficLightDriverPointDeviceExt"/>
+    </agent>
+  </type>
 </types>

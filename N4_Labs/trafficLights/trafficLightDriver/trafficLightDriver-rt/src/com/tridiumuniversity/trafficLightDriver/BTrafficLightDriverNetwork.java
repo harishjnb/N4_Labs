@@ -22,10 +22,15 @@ import com.tridium.ndriver.discover.*;
 import com.tridium.ndriver.poll.*;
 
 import com.tridiumuniversity.trafficLightDriver.comm.BTrafficLightDriverTcpCommConfig;
+import com.tridiumuniversity.trafficLightDriver.learn.BTrafficLightDriverDeviceDiscoveryLeaf;
 import com.tridiumuniversity.trafficLightDriver.learn.BTrafficLightDriverDeviceDiscoveryPreferences;
+import com.tridiumuniversity.trafficLightDriver.message.req.TrafficLightDriverDiscoverReq;
 import com.tridiumuniversity.trafficLightDriver.message.req.TrafficLightDriverPingNetworkReq;
+import com.tridiumuniversity.trafficLightDriver.message.rsp.TrafficLightDriverDiscoverResp;
 
 import javax.baja.sys.Action;
+import java.util.List;
+import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -244,13 +249,6 @@ public class BTrafficLightDriverNetwork
 //BINDiscoveryHost
 ////////////////////////////////////////////////////////////////
 
-  public BINDiscoveryObject[] getDiscoveryObjects(BNDiscoveryPreferences prefs)
-    throws Exception
-  {
-    // TODO Auto-generated method stub
-    return null;
-  }
-
   @Override
   public void doPing()
   {
@@ -289,6 +287,36 @@ public class BTrafficLightDriverNetwork
     }
   }
 
+  @Override
+  public BINDiscoveryObject[] getDiscoveryObjects(BNDiscoveryPreferences prefs)
+          throws Exception
+  {
+    if (!prefs.getJob().isAlive())
+    {
+      return null;
+    }
+
+    NMessage response = tcomm().sendRequest(new TrafficLightDriverDiscoverReq(getIpAddress()));
+
+    if (!(response instanceof TrafficLightDriverDiscoverResp))
+    {
+      prefs.getJob().discoverFail(lex.getText("discover.unexpectedResponseType"));
+      return null;
+    }
+
+    TrafficLightDriverDiscoverResp discoverResp = (TrafficLightDriverDiscoverResp)response;
+    Map<String, List<String>> intersectionLightMap = discoverResp.getIntersectionLightMap();
+
+    BINDiscoveryObject[] discoveredDevices = new BINDiscoveryObject[intersectionLightMap.size()];
+    int i = 0;
+    for(String intersectionId : intersectionLightMap.keySet())
+    {
+      prefs.getJob().log().message("trafficLightDriver", "discover.discoveredDevice.id", intersectionId);
+      discoveredDevices[i++] = new BTrafficLightDriverDeviceDiscoveryLeaf(intersectionId);
+    }
+
+    return discoveredDevices;
+  }
 
   public BOrd doSubmitDiscoveryJob(BNDiscoveryPreferences preferences)
   {
@@ -305,7 +333,6 @@ public class BTrafficLightDriverNetwork
 ////////////////////////////////////////////////////////////////
 //Utilities
 ////////////////////////////////////////////////////////////////
-
 
   /**
    * Access the tcp comm stack

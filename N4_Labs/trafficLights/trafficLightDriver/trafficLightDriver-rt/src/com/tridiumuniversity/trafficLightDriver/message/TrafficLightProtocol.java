@@ -6,7 +6,9 @@ package com.tridiumuniversity.trafficLightDriver.message;
 
 import com.tridiumuniversity.devTrafficLights.BTrafficLightState;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public final class TrafficLightProtocol
@@ -116,6 +118,43 @@ public final class TrafficLightProtocol
 
 //endregion set traffic light
 
+    //start discovery
+    public static String makeDiscoverRequest()
+    {
+        return DISCOVER_PREFIX;
+    }
+
+    public static boolean isDiscoverResponse(String response)
+    {
+        return response.startsWith(DISCOVER_PREFIX);
+    }
+
+    public static boolean isDiscoverErrorResponse(String response)
+    {
+        return response.contains(DISCOVER_ERROR);
+    }
+
+    public static Map<String, List<String>> parseDiscoverResponse(String response)
+    {
+        Map<String, List<String>> intersectionLightMap = new HashMap<>();
+
+        // Remove leading "discover "
+        response = response.substring((DISCOVER_PREFIX + " ").length());
+
+        String[] intersectionLightPairs = response.split("\t");
+        for (String intersectionLightPair : intersectionLightPairs)
+        {
+            String[] intersectionAndLight = intersectionLightPair.split(" ");
+            String intersection = intersectionAndLight[0].toLowerCase();
+            String light = intersectionAndLight[1].toLowerCase();
+
+            List<String> lightsForIntersection = intersectionLightMap.computeIfAbsent(intersection, lights -> new ArrayList<>());
+            lightsForIntersection.add(light);
+        }
+        return intersectionLightMap;
+    }
+
+
     public static final char START_BYTE = 0;
     public static final char END_BYTE = 23;
     private static final String OK = "ok";
@@ -127,4 +166,7 @@ public final class TrafficLightProtocol
     private static final String GET_ERROR = String.format("%s %s", GET_PREFIX, ERROR);
     private static final String SET_PREFIX = "set";
     private static final String SET_ERROR = String.format("%s %s", SET_PREFIX, ERROR);
+
+    private static final String DISCOVER_PREFIX = "discover";
+    private static final String DISCOVER_ERROR = String.format("%s %s", DISCOVER_PREFIX, ERROR);
 }

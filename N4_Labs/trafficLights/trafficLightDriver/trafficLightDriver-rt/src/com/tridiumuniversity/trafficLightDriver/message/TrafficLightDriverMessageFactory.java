@@ -11,6 +11,7 @@ import com.tridium.ndriver.io.TypedInputStream;
 import com.tridiumuniversity.trafficLightDriver.message.resp.TrafficLightDriverGenericErrorResp;
 import com.tridiumuniversity.trafficLightDriver.message.resp.TrafficLightDriverGetIntersectionResp;
 import com.tridiumuniversity.trafficLightDriver.message.resp.TrafficLightDriverPingIntersectionResp;
+import com.tridiumuniversity.trafficLightDriver.message.rsp.TrafficLightDriverDiscoverResp;
 import com.tridiumuniversity.trafficLightDriver.message.rsp.TrafficLightDriverPingNetworkResp;
 import com.tridiumuniversity.trafficLightDriver.message.resp.TrafficLightDriverSetLightResp;
 
@@ -57,6 +58,11 @@ public class TrafficLightDriverMessageFactory
     {
       log.config("Interpreting message as set traffic light response");
       responseMessage = new TrafficLightDriverSetLightResp();
+    }
+    else if (isDiscoverResponse(responseString))
+    {
+      log.config("Interpreting message as discovery response");
+      responseMessage = new TrafficLightDriverDiscoverResp();
     }
     else if (isGenericErrorResponse(responseString))
     {

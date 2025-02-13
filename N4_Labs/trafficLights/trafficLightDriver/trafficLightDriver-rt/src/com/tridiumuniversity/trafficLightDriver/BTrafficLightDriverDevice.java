@@ -64,7 +64,8 @@ import java.util.logging.Logger;
 @NiagaraProperty(
         name = "intersectionId",
         type = "String",
-        defaultValue = "A"
+        defaultValue = "A",
+        facets = @Facet("SfUtil.incl(SfUtil.MGR_EDIT)")
 )
 public class BTrafficLightDriverDevice
         extends BNDevice
@@ -72,8 +73,8 @@ public class BTrafficLightDriverDevice
 {
 //region /*+ ------------ BEGIN BAJA AUTO GENERATED CODE ------------ +*/
 //@formatter:off
-/*@ $com.tridiumuniversity.trafficLightDriver.BTrafficLightDriverDevice(3716448582)1.0$ @*/
-/* Generated Wed Feb 12 14:57:04 EST 2025 by Slot-o-Matic (c) Tridium, Inc. 2012-2025 */
+/*@ $com.tridiumuniversity.trafficLightDriver.BTrafficLightDriverDevice(4144957637)1.0$ @*/
+/* Generated Thu Feb 13 13:33:45 EST 2025 by Slot-o-Matic (c) Tridium, Inc. 2012-2025 */
 
   //region Property "pollFrequency"
 
@@ -140,7 +141,7 @@ public class BTrafficLightDriverDevice
    * @see #getIntersectionId
    * @see #setIntersectionId
    */
-  public static final Property intersectionId = newProperty(0, "A", null);
+  public static final Property intersectionId = newProperty(0, "A", SfUtil.incl(SfUtil.MGR_EDIT));
 
   /**
    * Get the {@code intersectionId} property.

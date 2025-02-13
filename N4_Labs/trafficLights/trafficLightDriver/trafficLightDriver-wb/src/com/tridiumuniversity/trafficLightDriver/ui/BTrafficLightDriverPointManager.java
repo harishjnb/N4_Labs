@@ -16,8 +16,15 @@ import javax.baja.workbench.mgr.*;
 import javax.baja.workbench.mgr.folder.*;
 import javax.baja.nre.annotations.*;
 
+import com.tridium.ndriver.ui.point.BNPointManager;
+import com.tridium.ndriver.ui.point.NPointController;
+import com.tridium.ndriver.ui.point.NPointModel;
 import com.tridiumuniversity.trafficLightDriver.*;
 import com.tridiumuniversity.trafficLightDriver.point.*;
+
+import java.util.ArrayList;
+
+import static javax.baja.driver.ui.point.PointModel.*;
 
 /**
  * BTrafficLightDriverPointManager provides the user interface to manage
@@ -25,14 +32,14 @@ import com.tridiumuniversity.trafficLightDriver.point.*;
  *
  * @author tridiumuniversity on 12 Feb 2025
  */
-@NiagaraType
+@NiagaraType(agent=@AgentOn(types="trafficLightDriver:TrafficLightDriverPointDeviceExt"))
 public class BTrafficLightDriverPointManager
-  extends BPointManager
+  extends BNPointManager
 {
 //region /*+ ------------ BEGIN BAJA AUTO GENERATED CODE ------------ +*/
 //@formatter:off
-/*@ $com.tridiumuniversity.trafficLightDriver.ui.BTrafficLightDriverPointManager(2979906276)1.0$ @*/
-/* Generated Wed Feb 12 11:41:20 EST 2025 by Slot-o-Matic (c) Tridium, Inc. 2012-2025 */
+/*@ $com.tridiumuniversity.trafficLightDriver.ui.BTrafficLightDriverPointManager(311468428)1.0$ @*/
+/* Generated Thu Feb 13 13:51:44 EST 2025 by Slot-o-Matic (c) Tridium, Inc. 2012-2025 */
 
   //region Type
 
@@ -44,6 +51,7 @@ public class BTrafficLightDriverPointManager
 
 //@formatter:on
 //endregion /*+ ------------ END BAJA AUTO GENERATED CODE -------------- +*/
+
 ////////////////////////////////////////////////////////////////
 // Constructor
 ////////////////////////////////////////////////////////////////
@@ -70,9 +78,9 @@ public class BTrafficLightDriverPointManager
 // Model
 ////////////////////////////////////////////////////////////////
 
-  class Model extends PointModel
+  class Model extends NPointModel
   {
-    Model(BPointManager manager)
+    Model(BNPointManager manager)
     {
       super(manager);
     }
@@ -81,15 +89,27 @@ public class BTrafficLightDriverPointManager
     {
       return cols;
     }
+
+    @Override
+    public MgrTypeInfo[] getNewTypes()
+    {
+      ArrayList<MgrTypeInfo> list = new ArrayList<>();
+      addEnumPointTypes(list,true);
+      addStringPointTypes(list,true);
+      addNumericPointTypes(list,true);
+      return list.toArray(new MgrTypeInfo[0]);
+    }
   }
+
+
 
 ////////////////////////////////////////////////////////////////
 // Controller
 ////////////////////////////////////////////////////////////////
 
-  class Controller extends PointController
+  class Controller extends NPointController
   {
-    Controller(BPointManager mgr)
+    Controller(BNPointManager mgr)
     {
       super(mgr);
     }
@@ -102,24 +122,23 @@ public class BTrafficLightDriverPointManager
   static Lexicon lex = Lexicon.make(BTrafficLightDriverPointManager.class);
 
   // base class columns
-  MgrColumn colPath        = new MgrColumn.Path(MgrColumn.UNSEEN);
   MgrColumn colName        = new MgrColumn.Name();
   MgrColumn colType        = new MgrColumn.Type();
   MgrColumn colToString    = new MgrColumn.ToString("Out", 0);
+
+  MgrColumn lightId  = new MgrColumn.PropPath(new Property[] {BControlPoint.proxyExt, BTrafficLightDriverProxyExt.lightId},   MgrColumn.EDITABLE);
+
   MgrColumn colEnabled     = new MgrColumn.PropPath(new Property[] {BControlPoint.proxyExt, BProxyExt.enabled}, MgrColumn.EDITABLE | MgrColumn.UNSEEN);
-  MgrColumn colFacets      = new MgrColumn.PropPath(new Property[] {BControlPoint.facets},  MgrColumn.EDITABLE | MgrColumn.UNSEEN);
-  MgrColumn colTuning      = new MgrColumn.PropPath(new Property[] {BControlPoint.proxyExt, BProxyExt.tuningPolicyName}, MgrColumn.EDITABLE);
-  MgrColumn colDeviceFacets= new MgrColumn.PropPath(new Property[] {BControlPoint.proxyExt, BProxyExt.deviceFacets}, MgrColumn.EDITABLE | MgrColumn.UNSEEN);
-  MgrColumn colConversion  = new MgrColumn.PropPath(new Property[] {BControlPoint.proxyExt, BProxyExt.conversion},   MgrColumn.EDITABLE | MgrColumn.UNSEEN);
   MgrColumn colFaultCause  = new MgrColumn.PropPath(new Property[] {BControlPoint.proxyExt, BProxyExt.faultCause},   MgrColumn.UNSEEN);
+
   MgrColumn colReadValue   = new MgrColumn.PropPath(new Property[] {BControlPoint.proxyExt, BProxyExt.readValue},    MgrColumn.UNSEEN);
   MgrColumn colWriteValue  = new MgrColumn.PropPath(new Property[] {BControlPoint.proxyExt, BProxyExt.writeValue},   MgrColumn.UNSEEN);
+
 
   // TrafficLightDriverProxyExt specific columns
   MgrColumn[] cols =
   {
-    colPath, colName, colType, colToString,
-    colEnabled, colFacets, colTuning, colDeviceFacets, colConversion,
-    colFaultCause, colReadValue, colWriteValue,
+    colName, colType, colToString,lightId,
+    colEnabled, colFaultCause, colReadValue, colWriteValue,
   };
 }

@@ -9,11 +9,21 @@ import javax.baja.nre.annotations.NiagaraType;
 import javax.baja.sys.Property;
 import javax.baja.sys.Sys;
 import javax.baja.sys.Type;
+import javax.baja.util.Lexicon;
 
+import com.tridium.ndriver.comm.NMessage;
+import com.tridium.ndriver.datatypes.BIpAddress;
 import com.tridium.ndriver.discover.*;
 import com.tridium.ndriver.point.*;
 
 import com.tridiumuniversity.trafficLightDriver.*;
+import com.tridiumuniversity.trafficLightDriver.message.req.TrafficLightDriverDiscoverReq;
+import com.tridiumuniversity.trafficLightDriver.message.rsp.TrafficLightDriverDiscoverResp;
+
+import java.util.List;
+import java.util.Map;
+
+import static com.tridiumuniversity.trafficLightDriver.BTrafficLightDriverNetwork.lex;
 
 /**
  * BTrafficLightDriverPointDeviceExt is a container for trafficLightDriver proxy points.
@@ -120,13 +130,33 @@ public class BTrafficLightDriverPointDeviceExt
   public BINDiscoveryObject[] getDiscoveryObjects(BNDiscoveryPreferences prefs)
     throws Exception
   {
-    //
-    // TODO  get array of discovery objects
-    //
-//    Array<??> a = new Array<>(??.class);
-//    for(??)
-//     a.add(new BTrafficLightDriverPointDiscoveryLeaf(??));
-//    return a.trim();
-    return null;
+    if (!prefs.getJob().isAlive())
+    {
+      return null;
+    }
+
+    BIpAddress address = getTrafficLightDriverNetwork().getIpAddress();
+    NMessage response = getTrafficLightDriverNetwork().tcomm().sendRequest(new TrafficLightDriverDiscoverReq(address));
+
+    if (!(response instanceof TrafficLightDriverDiscoverResp))
+    {
+      prefs.getJob().discoverFail(lex.getText("discover.unexpectedResponseType"));
+      return null;
+    }
+
+    TrafficLightDriverDiscoverResp discoverResp = (TrafficLightDriverDiscoverResp)response;
+    Map<String, List<String>> intersectionLightMap = discoverResp.getIntersectionLightMap();
+    List<String> lights = intersectionLightMap.get(getTrafficLightDriverDevice().getIntersectionId().toLowerCase());
+
+    BINDiscoveryObject[] discoveredPoints = new BINDiscoveryObject[lights.size()];
+    int i = 0;
+    for(String lightId : lights)
+    {
+      prefs.getJob().log().message("trafficLightDriver", "discover.discoveredPoint.id", lightId);
+      discoveredPoints[i++] = new BTrafficLightDriverPointDiscoveryLeaf(lightId);
+    }
+
+    return discoveredPoints;
   }
+  private static final Lexicon lex = Lexicon.make(BTrafficLightDriverNetwork.class);
 }

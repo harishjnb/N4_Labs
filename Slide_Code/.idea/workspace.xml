@@ -5,24 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f62777bd-daa9-4596-a472-6560d14a31ac" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../N4_Labs/trafficLights/devTrafficLights/devTrafficLights-ux/src/com/tridiumuniversity/devtrafficlights/ux/BTrafficLightWidget.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../N4_Labs/trafficLights/devTrafficLights/devTrafficLights-ux/src/rc/TrafficLightWidget.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../N4_Labs/trafficLights/devTrafficLights/devTrafficLights-ux/src/rc/TrafficLightWidget.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practice/prac/prac-rt/src/com/tridiumuniversity/prac/BMyState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practice/prac/prac-rt/src/com/tridiumuniversity/prac/BPracService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practice/prac/prac-rt/src/com/tridiumuniversity/prac/BPracWorker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practice/prac/prac-rt/src/com/tridiumuniversity/prac/BRectangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../N4_Labs/trafficLights/.gradle/7.6/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../N4_Labs/trafficLights/.gradle/7.6/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../N4_Labs/trafficLights/.gradle/7.6/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../N4_Labs/trafficLights/.gradle/7.6/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../N4_Labs/trafficLights/.gradle/7.6/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../N4_Labs/trafficLights/.gradle/7.6/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../N4_Labs/trafficLights/.gradle/7.6/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../N4_Labs/trafficLights/.gradle/7.6/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../N4_Labs/trafficLights/.gradle/7.6/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../N4_Labs/trafficLights/.gradle/7.6/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../N4_Labs/trafficLights/.gradle/7.6/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../N4_Labs/trafficLights/.gradle/7.6/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../N4_Labs/trafficLights/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../N4_Labs/trafficLights/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../N4_Labs/trafficLights/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/../N4_Labs/trafficLights/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../N4_Labs/trafficLights/devTrafficLights/devTrafficLights-rt/build/libs/devTrafficLights-rt.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../N4_Labs/trafficLights/devTrafficLights/devTrafficLights-rt/build/libs/devTrafficLights-rt.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../N4_Labs/trafficLights/devTrafficLights/devTrafficLights-ux/module-include.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../N4_Labs/trafficLights/devTrafficLights/devTrafficLights-ux/module-include.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Review Assignments/ramakrishnan_harish_review/ramakrishnan_harish_review-rt/src/com/tridiumuniversity/ramakrishnan_harish_review/BReviewService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Review Assignments/ramakrishnan_harish_review/ramakrishnan_harish_review-rt/src/com/tridiumuniversity/ramakrishnan_harish_review/BReviewService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
