@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module name="trafficLightServer-rt" bajaVersion="0" vendor="tridiumuniversity" vendorVersion="1.0" description="An NDriver simulation of a traffic light network for use in N4 Developer Course" preferredSymbol="tls" nre="true" autoload="true" installable="true" buildMillis="%%BUILD_MILLIS%%" buildHost="US-SO10-NA87615" moduleName="trafficLightServer" runtimeProfile="rt">
+ <dependencies>
+  <dependency name="alarm-rt" vendor="Tridium" vendorVersion="4.14"/>
+  <dependency name="baja" vendor="Tridium" vendorVersion="4.14"/>
+  <dependency name="control-rt" vendor="Tridium" vendorVersion="4.14"/>
+  <dependency name="driver-rt" vendor="Tridium" vendorVersion="4.14"/>
+  <dependency name="ndriver-rt" vendor="Tridium" vendorVersion="4.14"/>
+ </dependencies>
+ <dirs/>
+ <installation/>
+ <types>
+  <type class="com.tridiumuniversity.trafficLightServer.BTrafficLightServerDevice" name="TrafficLightServerDevice"/>
+  <type class="com.tridiumuniversity.trafficLightServer.BTrafficLightServerDeviceFolder" name="TrafficLightServerDeviceFolder"/>
+  <type class="com.tridiumuniversity.trafficLightServer.BTrafficLightServerNetwork" name="TrafficLightServerNetwork"/>
+  <type class="com.tridiumuniversity.trafficLightServer.comm.BTrafficLightServerTcpCommConfig" name="TrafficLightServerTcpCommConfig"/>
+  <type class="com.tridiumuniversity.trafficLightServer.message.BTrafficLightState" name="TrafficLightState"/>
+  <type class="com.tridiumuniversity.trafficLightServer.point.BTrafficLightServerPointDeviceExt" name="TrafficLightServerPointDeviceExt"/>
+  <type class="com.tridiumuniversity.trafficLightServer.point.BTrafficLightServerPointFolder" name="TrafficLightServerPointFolder"/>
+  <type class="com.tridiumuniversity.trafficLightServer.point.BTrafficLightServerProxyExt" name="TrafficLightServerProxyExt"/>
+ </types>
+ <permissions>
+  <niagara-permission-groups type="all"/>
+  <niagara-permission-groups type="workbench"/>
+  <niagara-permission-groups type="station"/>
+ </permissions>
+</module>

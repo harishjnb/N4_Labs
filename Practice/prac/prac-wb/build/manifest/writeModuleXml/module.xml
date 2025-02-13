@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module name="prac-wb" bajaVersion="0" vendor="tridiumuniversity" vendorVersion="1.0" description="prac" preferredSymbol="pr" nre="true" autoload="true" installable="true" buildMillis="%%BUILD_MILLIS%%" buildHost="US-SO10-NA87615" moduleName="prac" runtimeProfile="wb">
+ <dependencies>
+  <dependency name="baja" vendor="Tridium" vendorVersion="4.14"/>
+ </dependencies>
+ <dirs/>
+ <installation/>
+ <permissions>
+  <niagara-permission-groups type="all"/>
+  <niagara-permission-groups type="workbench"/>
+  <niagara-permission-groups type="station"/>
+ </permissions>
+</module>

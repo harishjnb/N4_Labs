@@ -1,0 +1,9 @@
+<types>
+  <!--com.tridiumuniversity.prac-->
+  <type class="com.tridiumuniversity.prac.BPracService" name="PracService"/>
+  <type class="com.tridiumuniversity.prac.BPracWorker" name="PracWorker"/>
+  <type class="com.tridiumuniversity.prac.BRectangle" name="Rectangle"/>
+  <type class="com.tridiumuniversity.prac.BMyState" name="MyState"/>
+  <type class="com.tridiumuniversity.prac.BPracJob" name="PracJob"/>
+  <type class="com.tridiumuniversity.prac.BPracJobService" name="PracJobService"/>
+</types>

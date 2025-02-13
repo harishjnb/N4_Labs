@@ -1,0 +1,25 @@
+/*
+ * Copyright 2024 Tridium, Inc. All Rights Reserved. This code is supplied as example code only and is not intended for use in production.
+ */
+
+.bajascript-examples-view .wrapper {
+  max-width: 40vw;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1rem;
+}
+
+.bajascript-examples-view button {
+  text-align: left;
+}
+
+.demo-view .wrapper {
+  max-width: 40vw;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}

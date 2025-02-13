@@ -42,6 +42,26 @@
         <module name="devTrafficLights.devTrafficLights-wb.moduleTest" />
         <module name="devTrafficLights.devTrafficLights-wb.main" />
       </profile>
+      <profile name="Gradle Imported" enabled="true">
+        <outputRelativeToContentRoot value="true" />
+        <option name="niagara.module.root" value="F:\Niagara\N4_Labs_Home\N4_Labs\trafficLights\trafficLightDriver\trafficLightDriver-rt" />
+        <option name="niagara.test.roots" value="srcTest=java" />
+        <processorPath useClasspath="false">
+          <entry name="$PROJECT_DIR$/../../../niagara-4.14.0.162/bin/ext/nre.jar" />
+        </processorPath>
+        <module name="devTrafficLights.trafficLightDriver-rt.main" />
+        <module name="devTrafficLights.trafficLightDriver-rt.moduleTest" />
+      </profile>
+      <profile name="Gradle Imported" enabled="true">
+        <outputRelativeToContentRoot value="true" />
+        <option name="niagara.module.root" value="F:\Niagara\N4_Labs_Home\N4_Labs\trafficLights\trafficLightDriver\trafficLightDriver-wb" />
+        <option name="niagara.test.roots" value="srcTest=java" />
+        <processorPath useClasspath="false">
+          <entry name="$PROJECT_DIR$/../../../niagara-4.14.0.162/bin/ext/nre.jar" />
+        </processorPath>
+        <module name="devTrafficLights.trafficLightDriver-wb.main" />
+        <module name="devTrafficLights.trafficLightDriver-wb.moduleTest" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8" />
   </component>

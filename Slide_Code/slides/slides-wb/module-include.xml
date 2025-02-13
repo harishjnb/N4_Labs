@@ -1,0 +1,36 @@
+<!-- ~ Copyright 2024 Tridium, Inc. All Rights Reserved. This code is supplied as example code only and is not intended for use in production. -->
+<types>
+  <!--com.tridiumuniversity.slides.ui-->
+  <type class="com.tridiumuniversity.slides.ui.BEdgePaneExample" name="EdgePaneExample">
+    <agent>
+      <on type="slides:Example"/>
+    </agent>
+  </type>
+  <type class="com.tridiumuniversity.slides.ui.BGridPaneExample" name="GridPaneExample">
+    <agent>
+      <on type="slides:Example"/>
+    </agent>
+  </type>
+  <type class="com.tridiumuniversity.slides.ui.BScrollPaneExample" name="ScrollPaneExample">
+    <agent>
+      <on type="slides:Example"/>
+    </agent>
+  </type>
+  <type class="com.tridiumuniversity.slides.ui.BCompassWidget" name="CompassWidget"/>
+  <type class="com.tridiumuniversity.slides.ui.BCompassFE" name="CompassFE">
+    <agent>
+      <on type="slides:Compass"/>
+    </agent>
+  </type>
+  <type class="com.tridiumuniversity.slides.ui.BExampleView" name="ExampleView">
+    <agent>
+      <on type="slides:Example"/>
+    </agent>
+  </type>
+  <!--com.tridiumuniversity.slides.ui.drivers-->
+  <type class="com.tridiumuniversity.slides.ui.drivers.BResetCommand" name="ResetCommand">
+    <agent>
+      <on type="exampleDriver:ExampleNetwork"/>
+    </agent>
+  </type>
+</types>

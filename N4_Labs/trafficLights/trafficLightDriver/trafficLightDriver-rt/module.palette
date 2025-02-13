@@ -1,0 +1,12 @@
+<!--
+  Copyright 2025 tridiumuniversity. All Rights Reserved.
+ -->
+<?xml version="1.0" encoding="UTF-8"?>
+<bajaObjectGraph version="1.0">
+  <p m="b=baja" t="b:UnrestrictedFolder">
+    <p n="TrafficLightDriverNetwork" m="x=trafficLightDriver" t="x:TrafficLightDriverNetwork"/>
+    <p n="TrafficLightDriverDevice" t="x:TrafficLightDriverDevice"/>
+    <p n="TrafficLightDriverDeviceFolder" t="x:TrafficLightDriverDeviceFolder"/>
+    <p n="TrafficLightDriverPointFolder" t="x:TrafficLightDriverPointFolder"/>
+  </p>
+</bajaObjectGraph>

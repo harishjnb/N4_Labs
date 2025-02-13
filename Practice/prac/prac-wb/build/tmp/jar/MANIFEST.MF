@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Implementation-Vendor: tridiumuniversity
+Implementation-Version: 1.0
+Sealed: true
+

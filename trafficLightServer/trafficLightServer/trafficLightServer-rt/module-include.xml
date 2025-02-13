@@ -1,0 +1,18 @@
+<!--
+  ~ Copyright 2024 Tridium, Inc. All Rights Reserved. This code is supplied as example code only and is not intended for use in production.
+  -->
+
+<types>
+  <!--com.tridiumuniversity.trafficLightServer-->
+  <type class="com.tridiumuniversity.trafficLightServer.BTrafficLightServerDevice" name="TrafficLightServerDevice"/>
+  <type class="com.tridiumuniversity.trafficLightServer.BTrafficLightServerDeviceFolder" name="TrafficLightServerDeviceFolder"/>
+  <type class="com.tridiumuniversity.trafficLightServer.BTrafficLightServerNetwork" name="TrafficLightServerNetwork"/>
+  <!--com.tridiumuniversity.trafficLightServer.comm-->
+  <type class="com.tridiumuniversity.trafficLightServer.comm.BTrafficLightServerTcpCommConfig" name="TrafficLightServerTcpCommConfig"/>
+  <!--com.tridiumuniversity.trafficLightServer.message-->
+  <type class="com.tridiumuniversity.trafficLightServer.message.BTrafficLightState" name="TrafficLightState"/>
+  <!--com.tridiumuniversity.trafficLightServer.point-->
+  <type class="com.tridiumuniversity.trafficLightServer.point.BTrafficLightServerPointDeviceExt" name="TrafficLightServerPointDeviceExt"/>
+  <type class="com.tridiumuniversity.trafficLightServer.point.BTrafficLightServerPointFolder" name="TrafficLightServerPointFolder"/>
+  <type class="com.tridiumuniversity.trafficLightServer.point.BTrafficLightServerProxyExt" name="TrafficLightServerProxyExt"/>
+</types>

@@ -1,0 +1,1244 @@
+<!--
+  ~ Copyright 2024 Tridium, Inc. All Rights Reserved. This code is supplied as example code only and is not intended for use in production.
+  -->
+<?xml version="1.0" encoding="UTF-8"?>
+<bajaObjectGraph version="1.0">
+  <p m="b=baja" t="b:UnrestrictedFolder">
+    <p n="TrafficLightServerNetwork" m="tls=trafficLightServer" t="tls:TrafficLightServerNetwork">
+      <p n="tcpConfig" t="tls:TrafficLightServerTcpCommConfig">
+        <p n="address" m="ndriver=ndriver" t="ndriver:IpAddress">
+          <p n="ipAddress" v="127.0.0.1"/>
+          <p n="port" v="23"/>
+        </p>
+        <p n="serverEnabled" v="true"/>
+      </p>
+      <p n="ServerView" f="o" t="b:PxView">
+        <p n="pxFile" t="b:Ord" v="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/ServerView.px"/>
+      </p>
+      <p n="A" t="tls:TrafficLightServerDevice">
+        <p n="points" t="tls:TrafficLightServerPointDeviceExt">
+          <p n="N" m="c=control" t="c:EnumWritable">
+            <p n="facets" t="b:Facets" v="range=E:trafficLightServer:TrafficLightState"/>
+            <p n="proxyExt" t="tls:TrafficLightServerProxyExt">
+            </p>
+            <p n="in1" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="in8" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="fallback" t="b:StatusEnum">
+              <p n="value" v="2@trafficLightServer:TrafficLightState"/>
+            </p>
+          </p>
+          <p n="S" t="c:EnumWritable">
+            <p n="facets" t="b:Facets" v="range=E:trafficLightServer:TrafficLightState"/>
+            <p n="proxyExt" t="tls:TrafficLightServerProxyExt">
+            </p>
+            <p n="in1" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="in8" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="fallback" t="b:StatusEnum">
+              <p n="value" v="2@trafficLightServer:TrafficLightState"/>
+            </p>
+          </p>
+          <p n="E" t="c:EnumWritable">
+            <p n="facets" t="b:Facets" v="range=E:trafficLightServer:TrafficLightState"/>
+            <p n="proxyExt" t="tls:TrafficLightServerProxyExt">
+            </p>
+            <p n="in1" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="in8" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="fallback" t="b:StatusEnum">
+              <p n="value" v="3@trafficLightServer:TrafficLightState"/>
+            </p>
+          </p>
+          <p n="W" t="c:EnumWritable">
+            <p n="facets" t="b:Facets" v="range=E:trafficLightServer:TrafficLightState"/>
+            <p n="proxyExt" t="tls:TrafficLightServerProxyExt">
+            </p>
+            <p n="in1" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="in8" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="fallback" t="b:StatusEnum">
+              <p n="value" v="3@trafficLightServer:TrafficLightState"/>
+            </p>
+          </p>
+        </p>
+        <p n="intersectionId" v="A"/>
+        <p n="DeviceView" f="o" t="b:PxView">
+          <p n="pxFile" t="b:Ord" v="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/DeviceView.px"/>
+        </p>
+      </p>
+      <p n="B" t="tls:TrafficLightServerDevice">
+        <p n="points" t="tls:TrafficLightServerPointDeviceExt">
+          <p n="N" t="c:EnumWritable">
+            <p n="facets" t="b:Facets" v="range=E:trafficLightServer:TrafficLightState"/>
+            <p n="proxyExt" t="tls:TrafficLightServerProxyExt">
+            </p>
+            <p n="in1" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="in8" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="fallback" t="b:StatusEnum">
+              <p n="value" v="1@trafficLightServer:TrafficLightState"/>
+            </p>
+          </p>
+          <p n="S" t="c:EnumWritable">
+            <p n="facets" t="b:Facets" v="range=E:trafficLightServer:TrafficLightState"/>
+            <p n="proxyExt" t="tls:TrafficLightServerProxyExt">
+            </p>
+            <p n="in1" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="in8" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="fallback" t="b:StatusEnum">
+              <p n="value" v="1@trafficLightServer:TrafficLightState"/>
+            </p>
+          </p>
+          <p n="E" t="c:EnumWritable">
+            <p n="facets" t="b:Facets" v="range=E:trafficLightServer:TrafficLightState"/>
+            <p n="proxyExt" t="tls:TrafficLightServerProxyExt">
+            </p>
+            <p n="in1" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="in8" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="fallback" t="b:StatusEnum">
+              <p n="value" v="3@trafficLightServer:TrafficLightState"/>
+            </p>
+          </p>
+          <p n="W" t="c:EnumWritable">
+            <p n="facets" t="b:Facets" v="range=E:trafficLightServer:TrafficLightState"/>
+            <p n="proxyExt" t="tls:TrafficLightServerProxyExt">
+            </p>
+            <p n="in1" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="in8" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="fallback" t="b:StatusEnum">
+              <p n="value" v="3@trafficLightServer:TrafficLightState"/>
+            </p>
+          </p>
+        </p>
+        <p n="intersectionId" v="B"/>
+        <p n="DeviceView" f="o" t="b:PxView">
+          <p n="pxFile" t="b:Ord" v="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/DeviceView.px"/>
+        </p>
+      </p>
+      <p n="C" t="tls:TrafficLightServerDevice">
+        <p n="points" t="tls:TrafficLightServerPointDeviceExt">
+          <p n="N" t="c:EnumWritable">
+            <p n="facets" t="b:Facets" v="range=E:trafficLightServer:TrafficLightState"/>
+            <p n="proxyExt" t="tls:TrafficLightServerProxyExt">
+            </p>
+            <p n="in1" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="in8" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="fallback" t="b:StatusEnum">
+              <p n="value" v="1@trafficLightServer:TrafficLightState"/>
+            </p>
+          </p>
+          <p n="S" t="c:EnumWritable">
+            <p n="facets" t="b:Facets" v="range=E:trafficLightServer:TrafficLightState"/>
+            <p n="proxyExt" t="tls:TrafficLightServerProxyExt">
+            </p>
+            <p n="in1" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="in8" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="fallback" t="b:StatusEnum">
+              <p n="value" v="1@trafficLightServer:TrafficLightState"/>
+            </p>
+          </p>
+          <p n="E" t="c:EnumWritable">
+            <p n="facets" t="b:Facets" v="range=E:trafficLightServer:TrafficLightState"/>
+            <p n="proxyExt" t="tls:TrafficLightServerProxyExt">
+            </p>
+            <p n="in1" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="in8" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="fallback" t="b:StatusEnum">
+              <p n="value" v="2@trafficLightServer:TrafficLightState"/>
+            </p>
+          </p>
+          <p n="W" t="c:EnumWritable">
+            <p n="facets" t="b:Facets" v="range=E:trafficLightServer:TrafficLightState"/>
+            <p n="proxyExt" t="tls:TrafficLightServerProxyExt">
+            </p>
+            <p n="in1" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="in8" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="fallback" t="b:StatusEnum">
+              <p n="value" v="2@trafficLightServer:TrafficLightState"/>
+            </p>
+          </p>
+        </p>
+        <p n="intersectionId" v="C"/>
+        <p n="DeviceView" f="o" t="b:PxView">
+          <p n="pxFile" t="b:Ord" v="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/DeviceView.px"/>
+        </p>
+      </p>
+      <p n="D" t="tls:TrafficLightServerDevice">
+        <p n="points" t="tls:TrafficLightServerPointDeviceExt">
+          <p n="N" t="c:EnumWritable">
+            <p n="facets" t="b:Facets" v="range=E:trafficLightServer:TrafficLightState"/>
+            <p n="proxyExt" t="tls:TrafficLightServerProxyExt">
+            </p>
+            <p n="in1" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="in8" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="fallback" t="b:StatusEnum">
+              <p n="value" v="3@trafficLightServer:TrafficLightState"/>
+            </p>
+          </p>
+          <p n="S" t="c:EnumWritable">
+            <p n="facets" t="b:Facets" v="range=E:trafficLightServer:TrafficLightState"/>
+            <p n="proxyExt" t="tls:TrafficLightServerProxyExt">
+            </p>
+            <p n="in1" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="in8" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="fallback" t="b:StatusEnum">
+              <p n="value" v="3@trafficLightServer:TrafficLightState"/>
+            </p>
+          </p>
+          <p n="E" t="c:EnumWritable">
+            <p n="facets" t="b:Facets" v="range=E:trafficLightServer:TrafficLightState"/>
+            <p n="proxyExt" t="tls:TrafficLightServerProxyExt">
+            </p>
+            <p n="in1" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="in8" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="fallback" t="b:StatusEnum">
+              <p n="value" v="1@trafficLightServer:TrafficLightState"/>
+            </p>
+          </p>
+          <p n="W" t="c:EnumWritable">
+            <p n="facets" t="b:Facets" v="range=E:trafficLightServer:TrafficLightState"/>
+            <p n="proxyExt" t="tls:TrafficLightServerProxyExt">
+            </p>
+            <p n="in1" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="in8" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="fallback" t="b:StatusEnum">
+              <p n="value" v="1@trafficLightServer:TrafficLightState"/>
+            </p>
+          </p>
+        </p>
+        <p n="intersectionId" v="D"/>
+        <p n="DeviceView" f="o" t="b:PxView">
+          <p n="pxFile" t="b:Ord" v="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/DeviceView.px"/>
+        </p>
+      </p>
+      <p n="E" t="tls:TrafficLightServerDevice">
+        <p n="points" t="tls:TrafficLightServerPointDeviceExt">
+          <p n="N" t="c:EnumWritable">
+            <p n="facets" t="b:Facets" v="range=E:trafficLightServer:TrafficLightState"/>
+            <p n="proxyExt" t="tls:TrafficLightServerProxyExt">
+            </p>
+            <p n="in1" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="in8" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="fallback" t="b:StatusEnum">
+              <p n="value" v="3@trafficLightServer:TrafficLightState"/>
+            </p>
+          </p>
+          <p n="S" t="c:EnumWritable">
+            <p n="facets" t="b:Facets" v="range=E:trafficLightServer:TrafficLightState"/>
+            <p n="proxyExt" t="tls:TrafficLightServerProxyExt">
+            </p>
+            <p n="in1" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="in8" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="fallback" t="b:StatusEnum">
+              <p n="value" v="3@trafficLightServer:TrafficLightState"/>
+            </p>
+          </p>
+          <p n="E" t="c:EnumWritable">
+            <p n="facets" t="b:Facets" v="range=E:trafficLightServer:TrafficLightState"/>
+            <p n="proxyExt" t="tls:TrafficLightServerProxyExt">
+            </p>
+            <p n="in1" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="in8" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="fallback" t="b:StatusEnum">
+              <p n="value" v="1@trafficLightServer:TrafficLightState"/>
+            </p>
+          </p>
+          <p n="W" t="c:EnumWritable">
+            <p n="facets" t="b:Facets" v="range=E:trafficLightServer:TrafficLightState"/>
+            <p n="proxyExt" t="tls:TrafficLightServerProxyExt">
+            </p>
+            <p n="in1" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="in8" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="fallback" t="b:StatusEnum">
+              <p n="value" v="1@trafficLightServer:TrafficLightState"/>
+            </p>
+          </p>
+        </p>
+        <p n="intersectionId" v="E"/>
+        <p n="DeviceView" f="o" t="b:PxView">
+          <p n="pxFile" t="b:Ord" v="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/DeviceView.px"/>
+        </p>
+      </p>
+      <p n="F" t="tls:TrafficLightServerDevice">
+        <p n="points" t="tls:TrafficLightServerPointDeviceExt">
+          <p n="N" t="c:EnumWritable">
+            <p n="facets" t="b:Facets" v="range=E:trafficLightServer:TrafficLightState"/>
+            <p n="proxyExt" t="tls:TrafficLightServerProxyExt">
+            </p>
+            <p n="in1" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="in8" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="fallback" t="b:StatusEnum">
+              <p n="value" v="3@trafficLightServer:TrafficLightState"/>
+            </p>
+          </p>
+          <p n="S" t="c:EnumWritable">
+            <p n="facets" t="b:Facets" v="range=E:trafficLightServer:TrafficLightState"/>
+            <p n="proxyExt" t="tls:TrafficLightServerProxyExt">
+            </p>
+            <p n="in1" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="in8" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="fallback" t="b:StatusEnum">
+              <p n="value" v="3@trafficLightServer:TrafficLightState"/>
+            </p>
+          </p>
+          <p n="E" t="c:EnumWritable">
+            <p n="facets" t="b:Facets" v="range=E:trafficLightServer:TrafficLightState"/>
+            <p n="proxyExt" t="tls:TrafficLightServerProxyExt">
+            </p>
+            <p n="in1" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="in8" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="fallback" t="b:StatusEnum">
+              <p n="value" v="1@trafficLightServer:TrafficLightState"/>
+            </p>
+          </p>
+          <p n="W" t="c:EnumWritable">
+            <p n="facets" t="b:Facets" v="range=E:trafficLightServer:TrafficLightState"/>
+            <p n="proxyExt" t="tls:TrafficLightServerProxyExt">
+            </p>
+            <p n="in1" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="in8" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="fallback" t="b:StatusEnum">
+              <p n="value" v="1@trafficLightServer:TrafficLightState"/>
+            </p>
+          </p>
+        </p>
+        <p n="intersectionId" v="F"/>
+        <p n="DeviceView" f="o" t="b:PxView">
+          <p n="pxFile" t="b:Ord" v="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/DeviceView.px"/>
+        </p>
+      </p>
+      <p n="G" t="tls:TrafficLightServerDevice">
+        <p n="points" t="tls:TrafficLightServerPointDeviceExt">
+          <p n="N" t="c:EnumWritable">
+            <p n="facets" t="b:Facets" v="range=E:trafficLightServer:TrafficLightState"/>
+            <p n="proxyExt" t="tls:TrafficLightServerProxyExt">
+            </p>
+            <p n="in1" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="in8" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="fallback" t="b:StatusEnum">
+              <p n="value" v="1@trafficLightServer:TrafficLightState"/>
+            </p>
+          </p>
+          <p n="S" t="c:EnumWritable">
+            <p n="facets" t="b:Facets" v="range=E:trafficLightServer:TrafficLightState"/>
+            <p n="proxyExt" t="tls:TrafficLightServerProxyExt">
+            </p>
+            <p n="in1" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="in8" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="fallback" t="b:StatusEnum">
+              <p n="value" v="1@trafficLightServer:TrafficLightState"/>
+            </p>
+          </p>
+          <p n="E" t="c:EnumWritable">
+            <p n="facets" t="b:Facets" v="range=E:trafficLightServer:TrafficLightState"/>
+            <p n="proxyExt" t="tls:TrafficLightServerProxyExt">
+            </p>
+            <p n="in1" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="in8" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="fallback" t="b:StatusEnum">
+              <p n="value" v="3@trafficLightServer:TrafficLightState"/>
+            </p>
+          </p>
+          <p n="W" t="c:EnumWritable">
+            <p n="facets" t="b:Facets" v="range=E:trafficLightServer:TrafficLightState"/>
+            <p n="proxyExt" t="tls:TrafficLightServerProxyExt">
+            </p>
+            <p n="in1" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="in8" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="fallback" t="b:StatusEnum">
+              <p n="value" v="3@trafficLightServer:TrafficLightState"/>
+            </p>
+          </p>
+        </p>
+        <p n="intersectionId" v="G"/>
+        <p n="DeviceView" f="o" t="b:PxView">
+          <p n="pxFile" t="b:Ord" v="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/DeviceView.px"/>
+        </p>
+      </p>
+      <p n="H" t="tls:TrafficLightServerDevice">
+        <p n="points" t="tls:TrafficLightServerPointDeviceExt">
+          <p n="N" t="c:EnumWritable">
+            <p n="facets" t="b:Facets" v="range=E:trafficLightServer:TrafficLightState"/>
+            <p n="proxyExt" t="tls:TrafficLightServerProxyExt">
+            </p>
+            <p n="in1" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="in8" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="fallback" t="b:StatusEnum">
+              <p n="value" v="1@trafficLightServer:TrafficLightState"/>
+            </p>
+          </p>
+          <p n="S" t="c:EnumWritable">
+            <p n="facets" t="b:Facets" v="range=E:trafficLightServer:TrafficLightState"/>
+            <p n="proxyExt" t="tls:TrafficLightServerProxyExt">
+            </p>
+            <p n="in1" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="in8" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="fallback" t="b:StatusEnum">
+              <p n="value" v="1@trafficLightServer:TrafficLightState"/>
+            </p>
+          </p>
+          <p n="E" t="c:EnumWritable">
+            <p n="facets" t="b:Facets" v="range=E:trafficLightServer:TrafficLightState"/>
+            <p n="proxyExt" t="tls:TrafficLightServerProxyExt">
+            </p>
+            <p n="in1" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="in8" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="fallback" t="b:StatusEnum">
+              <p n="value" v="3@trafficLightServer:TrafficLightState"/>
+            </p>
+          </p>
+          <p n="W" t="c:EnumWritable">
+            <p n="facets" t="b:Facets" v="range=E:trafficLightServer:TrafficLightState"/>
+            <p n="proxyExt" t="tls:TrafficLightServerProxyExt">
+            </p>
+            <p n="in1" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="in8" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="fallback" t="b:StatusEnum">
+              <p n="value" v="3@trafficLightServer:TrafficLightState"/>
+            </p>
+          </p>
+        </p>
+        <p n="intersectionId" v="H"/>
+        <p n="DeviceView" f="o" t="b:PxView">
+          <p n="pxFile" t="b:Ord" v="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/DeviceView.px"/>
+        </p>
+      </p>
+      <p n="I" t="tls:TrafficLightServerDevice">
+        <p n="points" t="tls:TrafficLightServerPointDeviceExt">
+          <p n="N" t="c:EnumWritable">
+            <p n="facets" t="b:Facets" v="range=E:trafficLightServer:TrafficLightState"/>
+            <p n="proxyExt" t="tls:TrafficLightServerProxyExt">
+            </p>
+            <p n="in1" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="in8" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="fallback" t="b:StatusEnum">
+              <p n="value" v="1@trafficLightServer:TrafficLightState"/>
+            </p>
+          </p>
+          <p n="S" t="c:EnumWritable">
+            <p n="facets" t="b:Facets" v="range=E:trafficLightServer:TrafficLightState"/>
+            <p n="proxyExt" t="tls:TrafficLightServerProxyExt">
+            </p>
+            <p n="in1" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="in8" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="fallback" t="b:StatusEnum">
+              <p n="value" v="1@trafficLightServer:TrafficLightState"/>
+            </p>
+          </p>
+          <p n="E" t="c:EnumWritable">
+            <p n="facets" t="b:Facets" v="range=E:trafficLightServer:TrafficLightState"/>
+            <p n="proxyExt" t="tls:TrafficLightServerProxyExt">
+            </p>
+            <p n="in1" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="in8" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="fallback" t="b:StatusEnum">
+              <p n="value" v="2@trafficLightServer:TrafficLightState"/>
+            </p>
+          </p>
+          <p n="W" t="c:EnumWritable">
+            <p n="facets" t="b:Facets" v="range=E:trafficLightServer:TrafficLightState"/>
+            <p n="proxyExt" t="tls:TrafficLightServerProxyExt">
+            </p>
+            <p n="in1" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="in8" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="fallback" t="b:StatusEnum">
+              <p n="value" v="2@trafficLightServer:TrafficLightState"/>
+            </p>
+          </p>
+        </p>
+        <p n="intersectionId" v="I"/>
+        <p n="DeviceView" f="o" t="b:PxView">
+          <p n="pxFile" t="b:Ord" v="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/DeviceView.px"/>
+        </p>
+      </p>
+      <p n="J" t="tls:TrafficLightServerDevice">
+        <p n="points" t="tls:TrafficLightServerPointDeviceExt">
+          <p n="N" t="c:EnumWritable">
+            <p n="facets" t="b:Facets" v="range=E:trafficLightServer:TrafficLightState"/>
+            <p n="proxyExt" t="tls:TrafficLightServerProxyExt">
+            </p>
+            <p n="in1" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="in8" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="fallback" t="b:StatusEnum">
+              <p n="value" v="3@trafficLightServer:TrafficLightState"/>
+            </p>
+          </p>
+          <p n="S" t="c:EnumWritable">
+            <p n="facets" t="b:Facets" v="range=E:trafficLightServer:TrafficLightState"/>
+            <p n="proxyExt" t="tls:TrafficLightServerProxyExt">
+            </p>
+            <p n="in1" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="in8" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="fallback" t="b:StatusEnum">
+              <p n="value" v="3@trafficLightServer:TrafficLightState"/>
+            </p>
+          </p>
+          <p n="E" t="c:EnumWritable">
+            <p n="facets" t="b:Facets" v="range=E:trafficLightServer:TrafficLightState"/>
+            <p n="proxyExt" t="tls:TrafficLightServerProxyExt">
+            </p>
+            <p n="in1" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="in8" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="fallback" t="b:StatusEnum">
+              <p n="value" v="1@trafficLightServer:TrafficLightState"/>
+            </p>
+          </p>
+          <p n="W" t="c:EnumWritable">
+            <p n="facets" t="b:Facets" v="range=E:trafficLightServer:TrafficLightState"/>
+            <p n="proxyExt" t="tls:TrafficLightServerProxyExt">
+            </p>
+            <p n="in1" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="in8" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="fallback" t="b:StatusEnum">
+              <p n="value" v="1@trafficLightServer:TrafficLightState"/>
+            </p>
+          </p>
+        </p>
+        <p n="intersectionId" v="J"/>
+        <p n="DeviceView" f="o" t="b:PxView">
+          <p n="pxFile" t="b:Ord" v="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/DeviceView.px"/>
+        </p>
+      </p>
+      <p n="K" t="tls:TrafficLightServerDevice">
+        <p n="points" t="tls:TrafficLightServerPointDeviceExt">
+          <p n="N" t="c:EnumWritable">
+            <p n="facets" t="b:Facets" v="range=E:trafficLightServer:TrafficLightState"/>
+            <p n="proxyExt" t="tls:TrafficLightServerProxyExt">
+            </p>
+            <p n="in1" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="in8" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="fallback" t="b:StatusEnum">
+              <p n="value" v="3@trafficLightServer:TrafficLightState"/>
+            </p>
+          </p>
+          <p n="S" t="c:EnumWritable">
+            <p n="facets" t="b:Facets" v="range=E:trafficLightServer:TrafficLightState"/>
+            <p n="proxyExt" t="tls:TrafficLightServerProxyExt">
+            </p>
+            <p n="in1" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="in8" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="fallback" t="b:StatusEnum">
+              <p n="value" v="3@trafficLightServer:TrafficLightState"/>
+            </p>
+          </p>
+          <p n="E" t="c:EnumWritable">
+            <p n="facets" t="b:Facets" v="range=E:trafficLightServer:TrafficLightState"/>
+            <p n="proxyExt" t="tls:TrafficLightServerProxyExt">
+            </p>
+            <p n="in1" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="in8" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="fallback" t="b:StatusEnum">
+              <p n="value" v="1@trafficLightServer:TrafficLightState"/>
+            </p>
+          </p>
+          <p n="W" t="c:EnumWritable">
+            <p n="facets" t="b:Facets" v="range=E:trafficLightServer:TrafficLightState"/>
+            <p n="proxyExt" t="tls:TrafficLightServerProxyExt">
+            </p>
+            <p n="in1" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="in8" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="fallback" t="b:StatusEnum">
+              <p n="value" v="1@trafficLightServer:TrafficLightState"/>
+            </p>
+          </p>
+        </p>
+        <p n="intersectionId" v="K"/>
+        <p n="DeviceView" f="o" t="b:PxView">
+          <p n="pxFile" t="b:Ord" v="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/DeviceView.px"/>
+        </p>
+      </p>
+      <p n="L" t="tls:TrafficLightServerDevice">
+        <p n="points" t="tls:TrafficLightServerPointDeviceExt">
+          <p n="N" t="c:EnumWritable">
+            <p n="facets" t="b:Facets" v="range=E:trafficLightServer:TrafficLightState"/>
+            <p n="proxyExt" t="tls:TrafficLightServerProxyExt">
+            </p>
+            <p n="in1" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="in8" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="fallback" t="b:StatusEnum">
+              <p n="value" v="3@trafficLightServer:TrafficLightState"/>
+            </p>
+          </p>
+          <p n="S" t="c:EnumWritable">
+            <p n="facets" t="b:Facets" v="range=E:trafficLightServer:TrafficLightState"/>
+            <p n="proxyExt" t="tls:TrafficLightServerProxyExt">
+            </p>
+            <p n="in1" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="in8" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="fallback" t="b:StatusEnum">
+              <p n="value" v="3@trafficLightServer:TrafficLightState"/>
+            </p>
+          </p>
+          <p n="E" t="c:EnumWritable">
+            <p n="facets" t="b:Facets" v="range=E:trafficLightServer:TrafficLightState"/>
+            <p n="proxyExt" t="tls:TrafficLightServerProxyExt">
+            </p>
+            <p n="in1" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="in8" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="fallback" t="b:StatusEnum">
+              <p n="value" v="1@trafficLightServer:TrafficLightState"/>
+            </p>
+          </p>
+          <p n="W" t="c:EnumWritable">
+            <p n="facets" t="b:Facets" v="range=E:trafficLightServer:TrafficLightState"/>
+            <p n="proxyExt" t="tls:TrafficLightServerProxyExt">
+            </p>
+            <p n="in1" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="in8" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="fallback" t="b:StatusEnum">
+              <p n="value" v="1@trafficLightServer:TrafficLightState"/>
+            </p>
+          </p>
+        </p>
+        <p n="intersectionId" v="L"/>
+        <p n="DeviceView" f="o" t="b:PxView">
+          <p n="pxFile" t="b:Ord" v="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/DeviceView.px"/>
+        </p>
+      </p>
+      <p n="M" t="tls:TrafficLightServerDevice">
+        <p n="points" t="tls:TrafficLightServerPointDeviceExt">
+          <p n="N" t="c:EnumWritable">
+            <p n="facets" t="b:Facets" v="range=E:trafficLightServer:TrafficLightState"/>
+            <p n="proxyExt" t="tls:TrafficLightServerProxyExt">
+            </p>
+            <p n="in1" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="in8" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="fallback" t="b:StatusEnum">
+              <p n="value" v="1@trafficLightServer:TrafficLightState"/>
+            </p>
+          </p>
+          <p n="S" t="c:EnumWritable">
+            <p n="facets" t="b:Facets" v="range=E:trafficLightServer:TrafficLightState"/>
+            <p n="proxyExt" t="tls:TrafficLightServerProxyExt">
+            </p>
+            <p n="in1" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="in8" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="fallback" t="b:StatusEnum">
+              <p n="value" v="1@trafficLightServer:TrafficLightState"/>
+            </p>
+          </p>
+          <p n="E" t="c:EnumWritable">
+            <p n="facets" t="b:Facets" v="range=E:trafficLightServer:TrafficLightState"/>
+            <p n="proxyExt" t="tls:TrafficLightServerProxyExt">
+            </p>
+            <p n="in1" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="in8" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="fallback" t="b:StatusEnum">
+              <p n="value" v="2@trafficLightServer:TrafficLightState"/>
+            </p>
+          </p>
+          <p n="W" t="c:EnumWritable">
+            <p n="facets" t="b:Facets" v="range=E:trafficLightServer:TrafficLightState"/>
+            <p n="proxyExt" t="tls:TrafficLightServerProxyExt">
+            </p>
+            <p n="in1" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="in8" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="fallback" t="b:StatusEnum">
+              <p n="value" v="2@trafficLightServer:TrafficLightState"/>
+            </p>
+          </p>
+        </p>
+        <p n="intersectionId" v="M"/>
+        <p n="DeviceView" f="o" t="b:PxView">
+          <p n="pxFile" t="b:Ord" v="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/DeviceView.px"/>
+        </p>
+      </p>
+      <p n="N" t="tls:TrafficLightServerDevice">
+        <p n="points" t="tls:TrafficLightServerPointDeviceExt">
+          <p n="N" t="c:EnumWritable">
+            <p n="facets" t="b:Facets" v="range=E:trafficLightServer:TrafficLightState"/>
+            <p n="proxyExt" t="tls:TrafficLightServerProxyExt">
+            </p>
+            <p n="in1" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="in8" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="fallback" t="b:StatusEnum">
+              <p n="value" v="3@trafficLightServer:TrafficLightState"/>
+            </p>
+          </p>
+          <p n="S" t="c:EnumWritable">
+            <p n="facets" t="b:Facets" v="range=E:trafficLightServer:TrafficLightState"/>
+            <p n="proxyExt" t="tls:TrafficLightServerProxyExt">
+            </p>
+            <p n="in1" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="in8" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="fallback" t="b:StatusEnum">
+              <p n="value" v="3@trafficLightServer:TrafficLightState"/>
+            </p>
+          </p>
+          <p n="E" t="c:EnumWritable">
+            <p n="facets" t="b:Facets" v="range=E:trafficLightServer:TrafficLightState"/>
+            <p n="proxyExt" t="tls:TrafficLightServerProxyExt">
+            </p>
+            <p n="in1" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="in8" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="fallback" t="b:StatusEnum">
+              <p n="value" v="1@trafficLightServer:TrafficLightState"/>
+            </p>
+          </p>
+          <p n="W" t="c:EnumWritable">
+            <p n="facets" t="b:Facets" v="range=E:trafficLightServer:TrafficLightState"/>
+            <p n="proxyExt" t="tls:TrafficLightServerProxyExt">
+            </p>
+            <p n="in1" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="in8" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="fallback" t="b:StatusEnum">
+              <p n="value" v="1@trafficLightServer:TrafficLightState"/>
+            </p>
+          </p>
+        </p>
+        <p n="intersectionId" v="N"/>
+        <p n="DeviceView" f="o" t="b:PxView">
+          <p n="pxFile" t="b:Ord" v="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/DeviceView.px"/>
+        </p>
+      </p>
+      <p n="O" t="tls:TrafficLightServerDevice">
+        <p n="points" t="tls:TrafficLightServerPointDeviceExt">
+          <p n="N" t="c:EnumWritable">
+            <p n="facets" t="b:Facets" v="range=E:trafficLightServer:TrafficLightState"/>
+            <p n="proxyExt" t="tls:TrafficLightServerProxyExt">
+            </p>
+            <p n="in1" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="in8" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="fallback" t="b:StatusEnum">
+              <p n="value" v="3@trafficLightServer:TrafficLightState"/>
+            </p>
+          </p>
+          <p n="S" t="c:EnumWritable">
+            <p n="facets" t="b:Facets" v="range=E:trafficLightServer:TrafficLightState"/>
+            <p n="proxyExt" t="tls:TrafficLightServerProxyExt">
+            </p>
+            <p n="in1" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="in8" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="fallback" t="b:StatusEnum">
+              <p n="value" v="3@trafficLightServer:TrafficLightState"/>
+            </p>
+          </p>
+          <p n="E" t="c:EnumWritable">
+            <p n="facets" t="b:Facets" v="range=E:trafficLightServer:TrafficLightState"/>
+            <p n="proxyExt" t="tls:TrafficLightServerProxyExt">
+            </p>
+            <p n="in1" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="in8" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="fallback" t="b:StatusEnum">
+              <p n="value" v="1@trafficLightServer:TrafficLightState"/>
+            </p>
+          </p>
+          <p n="W" t="c:EnumWritable">
+            <p n="facets" t="b:Facets" v="range=E:trafficLightServer:TrafficLightState"/>
+            <p n="proxyExt" t="tls:TrafficLightServerProxyExt">
+            </p>
+            <p n="in1" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="in8" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="fallback" t="b:StatusEnum">
+              <p n="value" v="1@trafficLightServer:TrafficLightState"/>
+            </p>
+          </p>
+        </p>
+        <p n="intersectionId" v="O"/>
+        <p n="DeviceView" f="o" t="b:PxView">
+          <p n="pxFile" t="b:Ord" v="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/DeviceView.px"/>
+        </p>
+      </p>
+      <p n="P" t="tls:TrafficLightServerDevice">
+        <p n="points" t="tls:TrafficLightServerPointDeviceExt">
+          <p n="N" t="c:EnumWritable">
+            <p n="facets" t="b:Facets" v="range=E:trafficLightServer:TrafficLightState"/>
+            <p n="proxyExt" t="tls:TrafficLightServerProxyExt">
+            </p>
+            <p n="in1" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="in8" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="fallback" t="b:StatusEnum">
+              <p n="value" v="3@trafficLightServer:TrafficLightState"/>
+            </p>
+          </p>
+          <p n="S" t="c:EnumWritable">
+            <p n="facets" t="b:Facets" v="range=E:trafficLightServer:TrafficLightState"/>
+            <p n="proxyExt" t="tls:TrafficLightServerProxyExt">
+            </p>
+            <p n="in1" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="in8" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="fallback" t="b:StatusEnum">
+              <p n="value" v="3@trafficLightServer:TrafficLightState"/>
+            </p>
+          </p>
+          <p n="E" t="c:EnumWritable">
+            <p n="facets" t="b:Facets" v="range=E:trafficLightServer:TrafficLightState"/>
+            <p n="proxyExt" t="tls:TrafficLightServerProxyExt">
+            </p>
+            <p n="in1" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="in8" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="fallback" t="b:StatusEnum">
+              <p n="value" v="1@trafficLightServer:TrafficLightState"/>
+            </p>
+          </p>
+          <p n="W" t="c:EnumWritable">
+            <p n="facets" t="b:Facets" v="range=E:trafficLightServer:TrafficLightState"/>
+            <p n="proxyExt" t="tls:TrafficLightServerProxyExt">
+            </p>
+            <p n="in1" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="in8" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="fallback" t="b:StatusEnum">
+              <p n="value" v="1@trafficLightServer:TrafficLightState"/>
+            </p>
+          </p>
+        </p>
+        <p n="intersectionId" v="P"/>
+        <p n="DeviceView" f="o" t="b:PxView">
+          <p n="pxFile" t="b:Ord" v="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/DeviceView.px"/>
+        </p>
+      </p>
+      <p n="Q" t="tls:TrafficLightServerDevice">
+        <p n="points" t="tls:TrafficLightServerPointDeviceExt">
+          <p n="N" t="c:EnumWritable">
+            <p n="facets" t="b:Facets" v="range=E:trafficLightServer:TrafficLightState"/>
+            <p n="proxyExt" t="tls:TrafficLightServerProxyExt">
+            </p>
+            <p n="in1" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="in8" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="fallback" t="b:StatusEnum">
+              <p n="value" v="2@trafficLightServer:TrafficLightState"/>
+            </p>
+          </p>
+          <p n="S" t="c:EnumWritable">
+            <p n="facets" t="b:Facets" v="range=E:trafficLightServer:TrafficLightState"/>
+            <p n="proxyExt" t="tls:TrafficLightServerProxyExt">
+            </p>
+            <p n="in1" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="in8" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="fallback" t="b:StatusEnum">
+              <p n="value" v="2@trafficLightServer:TrafficLightState"/>
+            </p>
+          </p>
+          <p n="E" t="c:EnumWritable">
+            <p n="facets" t="b:Facets" v="range=E:trafficLightServer:TrafficLightState"/>
+            <p n="proxyExt" t="tls:TrafficLightServerProxyExt">
+            </p>
+            <p n="in1" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="in8" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="fallback" t="b:StatusEnum">
+              <p n="value" v="1@trafficLightServer:TrafficLightState"/>
+            </p>
+          </p>
+          <p n="W" t="c:EnumWritable">
+            <p n="facets" t="b:Facets" v="range=E:trafficLightServer:TrafficLightState"/>
+            <p n="proxyExt" t="tls:TrafficLightServerProxyExt">
+            </p>
+            <p n="in1" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="in8" t="b:StatusEnum">
+              <p n="value" v="0@trafficLightServer:TrafficLightState"/>
+              <p n="status" v="40"/>
+            </p>
+            <p n="fallback" t="b:StatusEnum">
+              <p n="value" v="1@trafficLightServer:TrafficLightState"/>
+            </p>
+          </p>
+        </p>
+        <p n="intersectionId" v="Q"/>
+        <p n="DeviceView" f="o" t="b:PxView">
+          <p n="pxFile" t="b:Ord" v="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/DeviceView.px"/>
+        </p>
+      </p>
+    </p>
+  </p>
+</bajaObjectGraph>

@@ -1,0 +1,18 @@
+#
+# Lexicon for the slides module.
+#
+
+# BLexiconExample
+enabled=English Enabled Slot Name
+filename=English Filename Slot Name
+state=English State Slot Name
+LexiconExample.displayName=English Lexicon Example Type Name
+enabled.value=English Enabled
+disabled.value=English Disabled
+idle=English Idle
+inProgress=English In Progress
+success=English Success
+failure=English Failure
+
+# BCalculatePi
+piStep=Step {0} / {1}: pi = {2}

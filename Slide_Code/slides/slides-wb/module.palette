@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright 2024 Tridium, Inc. All Rights Reserved. This code is supplied as example code only and is not intended for use in production.
+  -->
+
+<bajaObjectGraph version="4.0" reversibleEncodingKeySource="none" FIPSEnabled="false" reversibleEncodingValidator="[null.1]=" >
+<p m="b=baja" t="b:UnrestrictedFolder">
+  <p t="b:UnrestrictedFolder" n="Widgets">
+    <p m="s=slides" t="s:CompassWidget" n="CompassWidget">
+      <p n="layout" v="0.0,0.0,50.0,50.0"/>
+      <p m="ui=bajaui" t="ui:ValueBinding" n="binding">
+        <p m="c=converters" t="c:PassThrough" n="value" />
+      </p>
+    </p>
+  </p>
+</p>
+</bajaObjectGraph>

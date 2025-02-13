@@ -1,0 +1,40 @@
+<!-- ~ Copyright 2024 Tridium, Inc. All Rights Reserved. This code is supplied as example code only and is not intended for use in production. -->
+<types>
+  <!--test.com.tridiumuniversity.slides.niagaraFundamentals-->
+  <type class="test.com.tridiumuniversity.slides.niagaraFundamentals.BComponentArrayTest" name="ComponentArrayTest"/>
+  <type class="test.com.tridiumuniversity.slides.niagaraFundamentals.BEvensOnlyWithCallbacksTest" name="EvensOnlyWithCallbacksTest"/>
+  <type class="test.com.tridiumuniversity.slides.niagaraFundamentals.BIncrementerTest" name="IncrementerTest"/>
+  <type class="test.com.tridiumuniversity.slides.niagaraFundamentals.BRectangleTest" name="RectangleTest"/>
+  <type class="test.com.tridiumuniversity.slides.niagaraFundamentals.BThingContainerTest" name="ThingContainerTest"/>
+  <type class="test.com.tridiumuniversity.slides.niagaraFundamentals.BThingTest" name="ThingTest"/>
+  <type class="test.com.tridiumuniversity.slides.niagaraFundamentals.BSlotsExamplesTest" name="SlotsExamplesTest"/>
+  <type class="test.com.tridiumuniversity.slides.niagaraFundamentals.BSlotAdderTest" name="SlotAdderTest"/>
+  <!--test.com.tridiumuniversity.slides.moduleDevelopment-->
+  <type class="test.com.tridiumuniversity.slides.moduleDevelopment.BPairTest" name="PairTest"/>
+  <type class="test.com.tridiumuniversity.slides.moduleDevelopment.BLoggingExampleTest" name="LoggingExampleTest"/>
+  <type class="test.com.tridiumuniversity.slides.moduleDevelopment.BSpyExampleTest" name="SpyExampleTest"/>
+  <type class="test.com.tridiumuniversity.slides.moduleDevelopment.BStartedStateTest413" name="StartedStateTest413"/>
+  <type class="test.com.tridiumuniversity.slides.moduleDevelopment.BStartedStateTest414" name="StartedStateTest414"/>
+  <type class="test.com.tridiumuniversity.slides.moduleDevelopment.BTimeHolderTest" name="TimeHolderTest"/>
+  <!--test.com.tridiumuniversity.slides.ordQueries-->
+  <type class="test.com.tridiumuniversity.slides.ordQueries.BAlarmExample2Test" name="AlarmExample2Test"/>
+  <type class="test.com.tridiumuniversity.slides.ordQueries.BAlarmExampleTest" name="AlarmExampleTest"/>
+  <type class="test.com.tridiumuniversity.slides.ordQueries.BBqlExample2Test" name="BqlExample2Test"/>
+  <type class="test.com.tridiumuniversity.slides.ordQueries.BBqlExampleTest" name="BqlExampleTest"/>
+  <type class="test.com.tridiumuniversity.slides.ordQueries.BNeqlExampleTest" name="NeqlExampleTest"/>
+  <type class="test.com.tridiumuniversity.slides.ordQueries.BProcessHistoriesExampleTest" name="ProcessHistoriesExampleTest"/>
+  <type class="test.com.tridiumuniversity.slides.ordQueries.BProcessHistoryExampleTest" name="ProcessHistoryExampleTest"/>
+  <type class="test.com.tridiumuniversity.slides.ordQueries.BUserSchemeTest" name="UserSchemeTest"/>
+  <!--test.com.tridiumuniversity.slides.servicesAndMultithreaded-->
+  <type class="test.com.tridiumuniversity.slides.servicesAndMultithreaded.BAsyncWithWorkerTest" name="AsyncWithWorkerTest"/>
+  <type class="test.com.tridiumuniversity.slides.servicesAndMultithreaded.BBadAsyncExampleTest" name="BadAsyncExampleTest"/>
+  <type class="test.com.tridiumuniversity.slides.servicesAndMultithreaded.BCalculatePiJobTest" name="CalculatePiJobTest"/>
+  <type class="test.com.tridiumuniversity.slides.servicesAndMultithreaded.BCalculatePiTest" name="CalculatePiTest"/>
+  <type class="test.com.tridiumuniversity.slides.servicesAndMultithreaded.BGoodAsyncExampleTest" name="GoodAsyncExampleTest"/>
+  <type class="test.com.tridiumuniversity.slides.servicesAndMultithreaded.BLookupServiceExampleTest" name="LookupServiceExampleTest"/>
+  <type class="test.com.tridiumuniversity.slides.servicesAndMultithreaded.BMutualExclusionTest" name="MutualExclusionTest"/>
+  <type class="test.com.tridiumuniversity.slides.servicesAndMultithreaded.BOffloadActionTest" name="OffloadActionTest"/>
+  <type class="test.com.tridiumuniversity.slides.servicesAndMultithreaded.BRaceConditionTest" name="RaceConditionTest"/>
+  <!--test.com.tridiumuniversity.slides.workbenchDevelopment-->
+  <type class="test.com.tridiumuniversity.slides.workbenchDevelopment.BStringTokenizerTest" name="StringTokenizerTest"/>
+</types>

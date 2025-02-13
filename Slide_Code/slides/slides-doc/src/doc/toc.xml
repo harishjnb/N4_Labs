@@ -1,0 +1,10 @@
+<!--
+  ~ Copyright 2024 Tridium, Inc. All Rights Reserved. This code is supplied as example code only and is not intended for use in production.
+  -->
+
+<toc version="1.0">
+  <tocitem text="MyHelpPage" target="myHelpPage.html" />
+  <tocitem text="MyFolder" target="myFolder.html">
+    <tocitem text="MyNestedHelpPage" target="myNestedHelpPage.html" />
+  </tocitem>
+</toc>

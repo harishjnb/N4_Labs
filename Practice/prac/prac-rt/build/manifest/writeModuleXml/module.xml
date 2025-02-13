@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module name="prac-rt" bajaVersion="0" vendor="tridiumuniversity" vendorVersion="1.0" description="prac" preferredSymbol="pr" nre="true" autoload="true" installable="true" buildMillis="%%BUILD_MILLIS%%" buildHost="US-SO10-NA87615" moduleName="prac" runtimeProfile="rt">
+ <dependencies>
+  <dependency name="baja" vendor="Tridium" vendorVersion="4.14"/>
+ </dependencies>
+ <dirs/>
+ <installation/>
+ <types>
+  <type class="com.tridiumuniversity.prac.BPracService" name="PracService"/>
+  <type class="com.tridiumuniversity.prac.BPracWorker" name="PracWorker"/>
+  <type class="com.tridiumuniversity.prac.BRectangle" name="Rectangle"/>
+  <type class="com.tridiumuniversity.prac.BMyState" name="MyState"/>
+  <type class="com.tridiumuniversity.prac.BPracJob" name="PracJob"/>
+  <type class="com.tridiumuniversity.prac.BPracJobService" name="PracJobService"/>
+ </types>
+ <permissions>
+  <niagara-permission-groups type="all"/>
+  <niagara-permission-groups type="workbench"/>
+  <niagara-permission-groups type="station"/>
+ </permissions>
+ <moduleParts>
+  <modulePart name="prac-wb" runtimeProfile="wb"/>
+ </moduleParts>
+</module>

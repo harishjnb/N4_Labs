@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright 2024 Tridium, Inc. All Rights Reserved. This code is supplied as example code only and is not intended for use in production.
+  -->
+
+<niagara-module moduleName="slides" preferredSymbol="sc" runtimeProfiles="rt,wb,doc,ux"/>

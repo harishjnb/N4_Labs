@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright 2024 Tridium, Inc. All Rights Reserved. This code is supplied as example code only and is not intended for use in production.
+  -->
+
+<bajaObjectGraph version="4.0" reversibleEncodingKeySource="none" FIPSEnabled="false" reversibleEncodingValidator="[null.1]=" >
+  <p m="b=baja" t="b:UnrestrictedFolder">
+    <p t="b:UnrestrictedFolder" n="Niagara$20Fundamentals">
+      <p m="s=slides" t="s:Example" n="Example" />
+      <p t="s:AgentExample" n="AgentExample" />
+      <p t="s:SlotsExamples" n="SlotsExamples" />
+      <p t="s:SlotAdder" n="SlotAdder" />
+      <p t="s:Incrementer" n="Incrementer" />
+      <p t="s:Rectangle" n="Rectangle" />
+      <p t="s:ComponentArray" n="ComponentArray" />
+      <p t="s:ThingContainer" n="ThingContainer" />
+      <p t="s:Thing" n="Thing" />
+      <p t="s:EvensOnly" n="EvensOnly" />
+      <p t="s:EvensOnlyWithCallbacks" n="EvensOnlyWithCallbacks" />
+    </p>
+    <p t="b:UnrestrictedFolder" n="Module$20Development">
+      <p t="s:TypeExample" n="TypeExample" />
+      <p t="s:PropertyExample" n="PropertyExample" />
+      <p t="s:ActionExample" n="ActionExample" />
+      <p t="s:TopicExample" n="TopicExample" />
+      <p t="s:Compass" n="Compass" />
+      <p t="s:SingletonExample" n="SingletonExample" />
+      <p t="s:LexiconExample" n="LexiconExample" />
+      <p t="s:TimeHolder" n="TimeHolder" />
+      <p t="s:StartedState" n="StartedState" />
+      <p t="s:LoggingExample" n="LoggingExample" />
+      <p t="s:SpyExample" n="SpyExample" />
+      <p t="s:DocumentationExample" n="DocumentationExample" />
+    </p>
+    <p t="b:UnrestrictedFolder" n="Ord$20Queries">
+      <p t="s:OrdExample" n="OrdExample" />
+      <p t="s:BqlExample" n="BqlExample" />
+      <p t="s:BqlExample2" n="BqlExample2" />
+      <p t="s:ProcessHistoriesExample" n="ProcessHistoriesExample" />
+      <p t="s:ProcessHistoryExample" n="ProcessHistoryExample" />
+      <p t="s:AlarmExample" n="AlarmExample" />
+      <p t="s:AlarmExample2" n="AlarmExample2" />
+      <p t="s:NeqlExample" n="NeqlExample" />
+    </p>
+    <p t="b:UnrestrictedFolder" n="Services$20and$20Multithreaded$20Development">
+      <p t="s:SimpleService" n="SimpleService" />
+      <p t="s:LookupServiceExample" n="LookupServiceExample" />
+      <p t="s:ThreadLogger" n="ThreadLogger" />
+      <p t="s:OffloadAction" n="OffloadAction" />
+      <p t="s:BadAsyncExample" n="BadAsyncExample" />
+      <p t="s:GoodAsyncExample" n="GoodAsyncExample" />
+      <p t="s:ConcreteThreadPoolWorker" n="ConcreteThreadPoolWorker" />
+      <p t="s:AsyncWithWorker" n="AsyncWithWorker" />
+      <p t="s:RaceCondition" n="RaceCondition" />
+      <p t="s:Deadlock" n="Deadlock" />
+      <p t="s:MutualExclusion" n="MutualExclusion" />
+      <p t="s:CalculatePiJob" n="CalculatePiJob" />
+      <p t="s:CalculatePi" n="CalculatePi" />
+    </p>
+    <p t="b:UnrestrictedFolder" n="Workbench$20Development">
+      <p t="s:SubscribedLogger" n="SubscribedLogger" />
+      <p t="s:StringTokenizer" n="StringTokenizer" />
+    </p>
+    <p t="b:UnrestrictedFolder" n="Web$20Development">
+      <p t="s:BajaScriptExamples" n="BajaScriptExamples" />
+      <p t="s:SimpleWidgetComponent" n="SimpleWidgetComponent" />
+      <p t="s:Demo" n="Demo" />
+    </p>
+    <p t="b:UnrestrictedFolder" n="Drivers">
+      <p t="s:ExampleDevice" n="ExampleDevice" />
+    </p>
+  </p>
+</bajaObjectGraph>

@@ -1,0 +1,69 @@
+<!-- ~ Copyright 2024 Tridium, Inc. All Rights Reserved. This code is supplied as example code only and is not intended for use in production. -->
+<types>
+  <!--com.tridiumuniversity.slides.niagaraFundamentals-->
+  <type class="com.tridiumuniversity.slides.niagaraFundamentals.BAgentExample" name="AgentExample">
+    <agent>
+      <on type="slides:Example"/>
+    </agent>
+  </type>
+  <type class="com.tridiumuniversity.slides.niagaraFundamentals.BComponentArray" name="ComponentArray"/>
+  <type class="com.tridiumuniversity.slides.niagaraFundamentals.BEvensOnly" name="EvensOnly"/>
+  <type class="com.tridiumuniversity.slides.niagaraFundamentals.BEvensOnlyWithCallbacks" name="EvensOnlyWithCallbacks"/>
+  <type class="com.tridiumuniversity.slides.niagaraFundamentals.BExample" name="Example"/>
+  <type class="com.tridiumuniversity.slides.niagaraFundamentals.BIncrementer" name="Incrementer"/>
+  <type class="com.tridiumuniversity.slides.niagaraFundamentals.BRectangle" name="Rectangle"/>
+  <type class="com.tridiumuniversity.slides.niagaraFundamentals.BThing" name="Thing"/>
+  <type class="com.tridiumuniversity.slides.niagaraFundamentals.BThingContainer" name="ThingContainer"/>
+  <type class="com.tridiumuniversity.slides.niagaraFundamentals.BCustomAction" name="CustomAction"/>
+  <type class="com.tridiumuniversity.slides.niagaraFundamentals.BCustomTopic" name="CustomTopic"/>
+  <type class="com.tridiumuniversity.slides.niagaraFundamentals.BSlotsExamples" name="SlotsExamples"/>
+  <type class="com.tridiumuniversity.slides.niagaraFundamentals.BSlotAdder" name="SlotAdder"/>
+  <!--com.tridiumuniversity.slides.moduleDevelopment-->
+  <type class="com.tridiumuniversity.slides.moduleDevelopment.BActionExample" name="ActionExample"/>
+  <type class="com.tridiumuniversity.slides.moduleDevelopment.BCompass" name="Compass"/>
+  <type class="com.tridiumuniversity.slides.moduleDevelopment.BPair" name="Pair"/>
+  <type class="com.tridiumuniversity.slides.moduleDevelopment.BPropertyExample" name="PropertyExample"/>
+  <type class="com.tridiumuniversity.slides.moduleDevelopment.BSingletonExample" name="SingletonExample"/>
+  <type class="com.tridiumuniversity.slides.moduleDevelopment.BTopicExample" name="TopicExample"/>
+  <type class="com.tridiumuniversity.slides.moduleDevelopment.BTypeExample" name="TypeExample"/>
+  <type class="com.tridiumuniversity.slides.moduleDevelopment.BFileState" name="FileState"/>
+  <type class="com.tridiumuniversity.slides.moduleDevelopment.BLexiconExample" name="LexiconExample"/>
+  <type class="com.tridiumuniversity.slides.moduleDevelopment.BLoggingExample" name="LoggingExample"/>
+  <type class="com.tridiumuniversity.slides.moduleDevelopment.BSpyExample" name="SpyExample"/>
+  <type class="com.tridiumuniversity.slides.moduleDevelopment.BStartedState" name="StartedState"/>
+  <type class="com.tridiumuniversity.slides.moduleDevelopment.BTimeHolder" name="TimeHolder"/>
+  <type class="com.tridiumuniversity.slides.moduleDevelopment.BDocumentationExample" name="DocumentationExample"/>
+  <!--com.tridiumuniversity.slides.ordQueries-->
+  <type class="com.tridiumuniversity.slides.ordQueries.BAlarmExample" name="AlarmExample"/>
+  <type class="com.tridiumuniversity.slides.ordQueries.BAlarmExample2" name="AlarmExample2"/>
+  <type class="com.tridiumuniversity.slides.ordQueries.BBqlExample" name="BqlExample"/>
+  <type class="com.tridiumuniversity.slides.ordQueries.BBqlExample2" name="BqlExample2"/>
+  <type class="com.tridiumuniversity.slides.ordQueries.BNeqlExample" name="NeqlExample"/>
+  <type class="com.tridiumuniversity.slides.ordQueries.BOrdExample" name="OrdExample"/>
+  <type class="com.tridiumuniversity.slides.ordQueries.BProcessHistoriesExample" name="ProcessHistoriesExample"/>
+  <type class="com.tridiumuniversity.slides.ordQueries.BProcessHistoryExample" name="ProcessHistoryExample"/>
+  <type class="com.tridiumuniversity.slides.ordQueries.BUserScheme" name="UserScheme" ordScheme="userDemo"/>
+  <!--com.tridiumuniversity.slides.servicesAndMultithreaded-->
+  <type class="com.tridiumuniversity.slides.servicesAndMultithreaded.BAsyncWithWorker" name="AsyncWithWorker"/>
+  <type class="com.tridiumuniversity.slides.servicesAndMultithreaded.BBadAsyncExample" name="BadAsyncExample"/>
+  <type class="com.tridiumuniversity.slides.servicesAndMultithreaded.BCalculatePi" name="CalculatePi"/>
+  <type class="com.tridiumuniversity.slides.servicesAndMultithreaded.BCalculatePiJob" name="CalculatePiJob"/>
+  <type class="com.tridiumuniversity.slides.servicesAndMultithreaded.BConcreteThreadPoolWorker" name="ConcreteThreadPoolWorker"/>
+  <type class="com.tridiumuniversity.slides.servicesAndMultithreaded.BDeadlock" name="Deadlock"/>
+  <type class="com.tridiumuniversity.slides.servicesAndMultithreaded.BGoodAsyncExample" name="GoodAsyncExample"/>
+  <type class="com.tridiumuniversity.slides.servicesAndMultithreaded.BLookupServiceExample" name="LookupServiceExample"/>
+  <type class="com.tridiumuniversity.slides.servicesAndMultithreaded.BMutualExclusion" name="MutualExclusion"/>
+  <type class="com.tridiumuniversity.slides.servicesAndMultithreaded.BOffloadAction" name="OffloadAction"/>
+  <type class="com.tridiumuniversity.slides.servicesAndMultithreaded.BRaceCondition" name="RaceCondition"/>
+  <type class="com.tridiumuniversity.slides.servicesAndMultithreaded.BSimpleService" name="SimpleService"/>
+  <type class="com.tridiumuniversity.slides.servicesAndMultithreaded.BThreadLogger" name="ThreadLogger"/>
+  <!--com.tridiumuniversity.slides.workbenchDevelopment-->
+  <type class="com.tridiumuniversity.slides.workbenchDevelopment.BSubscribedLogger" name="SubscribedLogger"/>
+  <type class="com.tridiumuniversity.slides.workbenchDevelopment.BStringTokenizer" name="StringTokenizer"/>
+  <!--com.tridiumuniversity.slides.drivers-->
+  <type class="com.tridiumuniversity.slides.drivers.BExampleDevice" name="ExampleDevice"/>
+  <!--com.tridiumuniversity.slides.webDevelopment-->
+  <type class="com.tridiumuniversity.slides.webDevelopment.BBajaScriptExamples" name="BajaScriptExamples"/>
+  <type class="com.tridiumuniversity.slides.webDevelopment.BDemo" name="Demo"/>
+  <type class="com.tridiumuniversity.slides.webDevelopment.BSimpleWidgetComponent" name="SimpleWidgetComponent"/>
+</types>

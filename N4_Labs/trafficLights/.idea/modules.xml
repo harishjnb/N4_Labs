@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/devTrafficLights.iml" filepath="$PROJECT_DIR$/.idea/modules/devTrafficLights.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/devTrafficLights/devTrafficLights-rt/devTrafficLights.devTrafficLights-rt.main.iml" filepath="$PROJECT_DIR$/.idea/modules/devTrafficLights/devTrafficLights-rt/devTrafficLights.devTrafficLights-rt.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/devTrafficLights/devtrafficLights-ux/devTrafficLights.devTrafficLights-ux.iml" filepath="$PROJECT_DIR$/.idea/modules/devTrafficLights/devtrafficLights-ux/devTrafficLights.devTrafficLights-ux.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/devTrafficLights/devtrafficLights-ux/devTrafficLights.devTrafficLights-ux.main.iml" filepath="$PROJECT_DIR$/.idea/modules/devTrafficLights/devtrafficLights-ux/devTrafficLights.devTrafficLights-ux.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/trafficLightDriver/trafficLightDriver-rt/devTrafficLights.trafficLightDriver-rt.main.iml" filepath="$PROJECT_DIR$/.idea/modules/trafficLightDriver/trafficLightDriver-rt/devTrafficLights.trafficLightDriver-rt.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/trafficLightDriver/trafficLightDriver-wb/devTrafficLights.trafficLightDriver-wb.main.iml" filepath="$PROJECT_DIR$/.idea/modules/trafficLightDriver/trafficLightDriver-wb/devTrafficLights.trafficLightDriver-wb.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/devTrafficLights/devTrafficLights-rt/trafficLights.devTrafficLights.devTrafficLights-rt.main.iml" filepath="$PROJECT_DIR$/.idea/modules/devTrafficLights/devTrafficLights-rt/trafficLights.devTrafficLights.devTrafficLights-rt.main.iml" />
     </modules>
   </component>

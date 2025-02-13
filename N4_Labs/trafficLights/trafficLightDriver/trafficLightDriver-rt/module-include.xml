@@ -1,0 +1,17 @@
+<types>
+  <!--com.tridiumuniversity.trafficLightDriver-->
+  <type class="com.tridiumuniversity.trafficLightDriver.BTrafficLightDriverDevice" name="TrafficLightDriverDevice"/>
+  <type class="com.tridiumuniversity.trafficLightDriver.BTrafficLightDriverDeviceFolder" name="TrafficLightDriverDeviceFolder"/>
+  <type class="com.tridiumuniversity.trafficLightDriver.BTrafficLightDriverNetwork" name="TrafficLightDriverNetwork"/>
+  <!--com.tridiumuniversity.trafficLightDriver.comm-->
+  <type class="com.tridiumuniversity.trafficLightDriver.comm.BTrafficLightDriverTcpCommConfig" name="TrafficLightDriverTcpCommConfig"/>
+  <!--com.tridiumuniversity.trafficLightDriver.learn-->
+  <type class="com.tridiumuniversity.trafficLightDriver.learn.BTrafficLightDriverDeviceDiscoveryLeaf" name="TrafficLightDriverDeviceDiscoveryLeaf"/>
+  <type class="com.tridiumuniversity.trafficLightDriver.learn.BTrafficLightDriverDeviceDiscoveryPreferences" name="TrafficLightDriverDeviceDiscoveryPreferences"/>
+  <!--com.tridiumuniversity.trafficLightDriver.point-->
+  <type class="com.tridiumuniversity.trafficLightDriver.point.BTrafficLightDriverPointDeviceExt" name="TrafficLightDriverPointDeviceExt"/>
+  <type class="com.tridiumuniversity.trafficLightDriver.point.BTrafficLightDriverPointDiscoveryLeaf" name="TrafficLightDriverPointDiscoveryLeaf"/>
+  <type class="com.tridiumuniversity.trafficLightDriver.point.BTrafficLightDriverPointDiscoveryPreferences" name="TrafficLightDriverPointDiscoveryPreferences"/>
+  <type class="com.tridiumuniversity.trafficLightDriver.point.BTrafficLightDriverPointFolder" name="TrafficLightDriverPointFolder"/>
+  <type class="com.tridiumuniversity.trafficLightDriver.point.BTrafficLightDriverProxyExt" name="TrafficLightDriverProxyExt"/>
+</types>

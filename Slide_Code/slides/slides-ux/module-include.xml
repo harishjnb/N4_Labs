@@ -1,0 +1,59 @@
+<!--
+  ~ Copyright 2024 Tridium, Inc. All Rights Reserved. This code is supplied as example code only and is not intended for use in production.
+  -->
+
+<types>
+  <!--com.tridiumuniversity.slides.ux-->
+  <type class="com.tridiumuniversity.slides.ux.BBajaScriptExamplesView" name="BajaScriptExamplesView">
+    <agent>
+      <on type="slides:BajaScriptExamples"/>
+    </agent>
+  </type>
+  <type class="com.tridiumuniversity.slides.ux.BDemoView" name="DemoView">
+    <agent>
+      <on type="slides:Demo"/>
+    </agent>
+  </type>
+  <type class="com.tridiumuniversity.slides.ux.BDemoViewWithComposedWidgets" name="DemoViewWithComposedWidgets">
+    <agent>
+      <on type="slides:Demo"/>
+    </agent>
+  </type>
+  <type class="com.tridiumuniversity.slides.ux.BDemoViewWithFe" name="DemoViewWithFe">
+    <agent>
+      <on type="slides:Demo"/>
+    </agent>
+  </type>
+  <type class="com.tridiumuniversity.slides.ux.BSimpleWidget" name="SimpleWidget">
+    <agent>
+      <on type="slides:SimpleWidgetComponent"/>
+    </agent>
+  </type>
+  <type class="com.tridiumuniversity.slides.ux.BSlidesCssResource" name="SlidesCssResource"/>
+  <type class="com.tridiumuniversity.slides.ux.BSlidesJsBuild" name="SlidesJsBuild"/>
+  <type class="com.tridiumuniversity.slides.ux.BSpandrelDemoView" name="SpandrelDemoView">
+    <agent>
+      <on type="slides:Demo"/>
+    </agent>
+  </type>
+  <type class="com.tridiumuniversity.slides.ux.BSpandrelDemoViewWithAny" name="SpandrelDemoViewWithAny">
+    <agent>
+      <on type="slides:Demo"/>
+    </agent>
+  </type>
+  <type class="com.tridiumuniversity.slides.ux.BSpandrelDemoViewWithAny2" name="SpandrelDemoViewWithAny2">
+    <agent>
+      <on type="slides:Demo"/>
+    </agent>
+  </type>
+  <type class="com.tridiumuniversity.slides.ux.BSpandrelDemoViewWithComposedWidgets" name="SpandrelDemoViewWithComposedWidgets">
+    <agent>
+      <on type="slides:Demo"/>
+    </agent>
+  </type>
+  <type class="com.tridiumuniversity.slides.ux.BDocumentationExampleView" name="DocumentationExampleView">
+    <agent>
+      <on type="slides:DocumentationExample"/>
+    </agent>
+  </type>
+</types>

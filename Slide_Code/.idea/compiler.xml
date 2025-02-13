@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Gradle Imported" enabled="true">
+        <outputRelativeToContentRoot value="true" />
+        <option name="niagara.module.root" value="F:\Niagara\N4_Labs_Home\Slide_Code\slides\slides-rt" />
+        <option name="niagara.test.roots" value="srcTest=java" />
+        <processorPath useClasspath="false">
+          <entry name="$PROJECT_DIR$/../../niagara-4.14.0.162/bin/ext/nre.jar" />
+        </processorPath>
+        <module name="slides.slides-rt.main" />
+        <module name="slides.slides-rt.moduleTest" />
+      </profile>
+      <profile name="Gradle Imported" enabled="true">
+        <outputRelativeToContentRoot value="true" />
+        <option name="niagara.module.root" value="F:\Niagara\N4_Labs_Home\Slide_Code\slides\slides-ux" />
+        <option name="niagara.test.roots" value="srcTest=java" />
+        <processorPath useClasspath="false">
+          <entry name="$PROJECT_DIR$/../../niagara-4.14.0.162/bin/ext/nre.jar" />
+        </processorPath>
+        <module name="slides.slides-ux.moduleTest" />
+        <module name="slides.slides-ux.main" />
+      </profile>
+      <profile name="Gradle Imported" enabled="true">
+        <outputRelativeToContentRoot value="true" />
+        <option name="niagara.module.root" value="F:\Niagara\N4_Labs_Home\Slide_Code\slides\slides-wb" />
+        <option name="niagara.test.roots" value="srcTest=java" />
+        <processorPath useClasspath="false">
+          <entry name="$PROJECT_DIR$/../../niagara-4.14.0.162/bin/ext/nre.jar" />
+        </processorPath>
+        <module name="slides.slides-wb.moduleTest" />
+        <module name="slides.slides-wb.main" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="1.8" />
+  </component>
+</project>

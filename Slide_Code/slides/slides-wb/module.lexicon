@@ -1,0 +1,6 @@
+#
+# Lexicon for the slides module.
+#
+menu.name=Example Menu
+exampleCommand.name=Example Command
+clearCommand.name=Clear

@@ -5,4 +5,7 @@
 .project  
 .class
 build
+.bin/
 node_modules
+.idea
+libs

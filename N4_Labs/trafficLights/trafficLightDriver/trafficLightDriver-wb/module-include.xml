@@ -1,0 +1,4 @@
+<types>
+  <!--com.tridiumuniversity.trafficLightDriver.ui-->
+  <type class="com.tridiumuniversity.trafficLightDriver.ui.BTrafficLightDriverPointManager" name="TrafficLightDriverPointManager"/>
+</types>

@@ -14,6 +14,8 @@
             <option value="$PROJECT_DIR$/devTrafficLights/devTrafficLights-rt" />
             <option value="$PROJECT_DIR$/devTrafficLights/devTrafficLights-ux" />
             <option value="$PROJECT_DIR$/devTrafficLights/devTrafficLights-wb" />
+            <option value="$PROJECT_DIR$/trafficLightDriver/trafficLightDriver-rt" />
+            <option value="$PROJECT_DIR$/trafficLightDriver/trafficLightDriver-wb" />
           </set>
         </option>
       </GradleProjectSettings>

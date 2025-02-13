@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright 2024 Tridium, Inc. All Rights Reserved. This code is supplied as example code only and is not intended for use in production.
+  -->
+
+<!-- Niagara Presentation XML -->
+<px version="1.0" media="workbench:WbPxMedia">
+<import>
+  <module name="baja"/>
+  <module name="bajaui"/>
+  <module name="converters"/>
+  <module name="gx"/>
+  <module name="kitPx"/>
+</import>
+<properties>
+
+  <property name="lightOrd" type="baja:Ord" value="null">
+    <target ord="slot:content/BoundLabel/BoundLabelBinding/ord"/>
+    <target ord="slot:content/BoundLabel2/BoundLabelBinding/ord"/>
+    <target ord="slot:content/BoundLabel1/BoundLabelBinding/ord"/>
+  </property>
+
+</properties>
+<content>
+<ScrollPane>
+
+  <CanvasPane name="content" viewSize="20.0,50.0" scale="fitRatio" minScaleFactor="0.5" maxScaleFactor="1.0">
+
+    <Label name="Label" layout="0.0,0.0,20.0,50.0" background="#222222"/>
+
+    <BoundLabel name="BoundLabel" layout="6.0,5.0,8.0,8.0">
+      <BoundLabelBinding name="BoundLabelBinding" statusEffect="none">
+        <IEnumToSimple name="background" map="gx:Brush 1=red;2,3=#40ff0000;default=null;"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <BoundLabel name="BoundLabel1" layout="6.0,20.0,8.0,8.0">
+      <BoundLabelBinding name="BoundLabelBinding" statusEffect="none">
+        <IEnumToSimple name="background" map="gx:Brush 1,3=#40ffff00;2=yellow;default=null;"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <BoundLabel name="BoundLabel2" layout="6.0,35.0,8.0,8.0">
+      <BoundLabelBinding name="BoundLabelBinding" statusEffect="none">
+        <IEnumToSimple name="background" map="gx:Brush 3=springGreen;1,2=#4000ff7f;default=null;"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+  </CanvasPane>
+
+</ScrollPane>
+</content>
+</px>

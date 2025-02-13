@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright 2024 Tridium, Inc. All Rights Reserved. This code is supplied as example code only and is not intended for use in production.
+  -->
+
+<!-- Niagara Presentation XML -->
+<px version="1.0" media="workbench:WbPxMedia">
+  <import>
+    <module name="baja"/>
+    <module name="bajaui"/>
+    <module name="converters"/>
+    <module name="gx"/>
+    <module name="kitPx"/>
+  </import>
+  <content>
+    <ScrollPane>
+
+      <CanvasPane name="content" viewSize="800.0,600.0" scale="fitRatio" minScaleFactor="0.5" maxScaleFactor="1.0">
+
+        <Label layout="0.0,0.0,800.0,600.0" image="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/images/map.jpg"/>
+
+        <PxInclude layout="180.0,60.0,20.0,50.0" ord="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/TrafficLight.px">
+          <Ord name="lightOrd" value="slot:A/points/N"/>
+        </PxInclude>
+
+        <PxInclude layout="180.0,150.0,20.0,50.0" ord="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/TrafficLight.px">
+          <Ord name="lightOrd" value="slot:A/points/S"/>
+        </PxInclude>
+
+        <PxInclude layout="150.0,100.0,20.0,50.0" ord="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/TrafficLight.px">
+          <Ord name="lightOrd" value="slot:A/points/W"/>
+        </PxInclude>
+
+        <PxInclude layout="250.0,110.0,20.0,50.0" ord="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/TrafficLight.px">
+          <Ord name="lightOrd" value="slot:B/points/W"/>
+        </PxInclude>
+
+        <PxInclude layout="280.0,70.0,20.0,50.0" ord="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/TrafficLight.px">
+          <Ord name="lightOrd" value="slot:B/points/N"/>
+        </PxInclude>
+
+        <PxInclude layout="280.0,150.0,20.0,50.0" ord="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/TrafficLight.px">
+          <Ord name="lightOrd" value="slot:B/points/S"/>
+        </PxInclude>
+
+        <PxInclude layout="310.0,110.0,20.0,50.0" ord="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/TrafficLight.px">
+          <Ord name="lightOrd" value="slot:B/points/E"/>
+        </PxInclude>
+
+        <Label layout="175.0,120.0,30.0,20.0" text="A" font="16.0pt SansSerif" background="white"/>
+
+        <PxInclude layout="360.0,120.0,20.0,50.0" ord="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/TrafficLight.px">
+          <Ord name="lightOrd" value="slot:C/points/W"/>
+        </PxInclude>
+
+        <PxInclude layout="420.0,120.0,20.0,50.0" ord="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/TrafficLight.px">
+          <Ord name="lightOrd" value="slot:C/points/E"/>
+        </PxInclude>
+
+        <PxInclude layout="390.0,160.0,20.0,50.0" ord="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/TrafficLight.px">
+          <Ord name="lightOrd" value="slot:C/points/S"/>
+        </PxInclude>
+
+        <PxInclude layout="390.0,80.0,20.0,50.0" ord="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/TrafficLight.px">
+          <Ord name="lightOrd" value="slot:C/points/N"/>
+        </PxInclude>
+
+        <PxInclude layout="470.0,140.0,20.0,50.0" ord="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/TrafficLight.px">
+          <Ord name="lightOrd" value="slot:D/points/W"/>
+        </PxInclude>
+
+        <PxInclude layout="500.0,180.0,20.0,50.0" ord="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/TrafficLight.px">
+          <Ord name="lightOrd" value="slot:D/points/S"/>
+        </PxInclude>
+
+        <PxInclude layout="530.0,140.0,20.0,50.0" ord="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/TrafficLight.px">
+          <Ord name="lightOrd" value="slot:D/points/E"/>
+        </PxInclude>
+
+        <PxInclude layout="500.0,100.0,20.0,50.0" ord="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/TrafficLight.px">
+          <Ord name="lightOrd" value="slot:D/points/N"/>
+        </PxInclude>
+
+        <Label layout="275.0,125.0,30.0,20.0" text="B" font="16.0pt SansSerif" background="white"/>
+
+        <Label layout="385.0,135.0,30.0,20.0" text="C" font="16.0pt SansSerif" background="white"/>
+
+        <Label layout="495.0,155.0,30.0,20.0" text="D" font="16.0pt SansSerif" background="white"/>
+
+        <PxInclude layout="640.0,150.0,20.0,50.0" ord="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/TrafficLight.px">
+          <Ord name="lightOrd" value="slot:E/points/E"/>
+        </PxInclude>
+
+        <PxInclude layout="610.0,190.0,20.0,50.0" ord="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/TrafficLight.px">
+          <Ord name="lightOrd" value="slot:E/points/S"/>
+        </PxInclude>
+
+        <PxInclude layout="580.0,150.0,20.0,50.0" ord="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/TrafficLight.px">
+          <Ord name="lightOrd" value="slot:E/points/W"/>
+        </PxInclude>
+
+        <PxInclude layout="610.0,110.0,20.0,50.0" ord="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/TrafficLight.px">
+          <Ord name="lightOrd" value="slot:E/points/N"/>
+        </PxInclude>
+
+        <Label layout="605.0,165.0,30.0,20.0" text="E" font="16.0pt SansSerif" background="white"/>
+
+        <PxInclude layout="170.0,240.0,20.0,50.0" ord="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/TrafficLight.px">
+          <Ord name="lightOrd" value="slot:G/points/N"/>
+        </PxInclude>
+
+        <PxInclude layout="140.0,280.0,20.0,50.0" ord="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/TrafficLight.px">
+          <Ord name="lightOrd" value="slot:G/points/W"/>
+        </PxInclude>
+
+        <PxInclude layout="200.0,280.0,20.0,50.0" ord="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/TrafficLight.px">
+          <Ord name="lightOrd" value="slot:G/points/E"/>
+        </PxInclude>
+
+        <Label layout="165.0,300.0,30.0,20.0" text="G" font="16.0pt SansSerif" background="white"/>
+
+        <PxInclude layout="170.0,330.0,20.0,50.0" ord="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/TrafficLight.px">
+          <Ord name="lightOrd" value="slot:G/points/S"/>
+        </PxInclude>
+
+        <PxInclude layout="270.0,260.0,20.0,50.0" ord="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/TrafficLight.px">
+          <Ord name="lightOrd" value="slot:H/points/N"/>
+        </PxInclude>
+
+        <PxInclude layout="240.0,300.0,20.0,50.0" ord="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/TrafficLight.px">
+          <Ord name="lightOrd" value="slot:H/points/W"/>
+        </PxInclude>
+
+        <PxInclude layout="300.0,300.0,20.0,50.0" ord="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/TrafficLight.px">
+          <Ord name="lightOrd" value="slot:H/points/E"/>
+        </PxInclude>
+
+        <Label layout="265.0,320.0,30.0,20.0" text="H" font="16.0pt SansSerif" background="white"/>
+
+        <PxInclude layout="270.0,350.0,20.0,50.0" ord="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/TrafficLight.px">
+          <Ord name="lightOrd" value="slot:H/points/S"/>
+        </PxInclude>
+
+        <PxInclude layout="380.0,270.0,20.0,50.0" ord="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/TrafficLight.px">
+          <Ord name="lightOrd" value="slot:I/points/N"/>
+        </PxInclude>
+
+        <PxInclude layout="350.0,310.0,20.0,50.0" ord="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/TrafficLight.px">
+          <Ord name="lightOrd" value="slot:I/points/W"/>
+        </PxInclude>
+
+        <PxInclude layout="410.0,310.0,20.0,50.0" ord="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/TrafficLight.px">
+          <Ord name="lightOrd" value="slot:I/points/E"/>
+        </PxInclude>
+
+        <Label layout="375.0,330.0,30.0,20.0" text="I" font="16.0pt SansSerif" background="white"/>
+
+        <PxInclude layout="380.0,360.0,20.0,50.0" ord="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/TrafficLight.px">
+          <Ord name="lightOrd" value="slot:I/points/S"/>
+        </PxInclude>
+
+        <PxInclude layout="480.0,280.0,20.0,50.0" ord="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/TrafficLight.px">
+          <Ord name="lightOrd" value="slot:J/points/N"/>
+        </PxInclude>
+
+        <PxInclude layout="450.0,320.0,20.0,50.0" ord="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/TrafficLight.px">
+          <Ord name="lightOrd" value="slot:J/points/W"/>
+        </PxInclude>
+
+        <PxInclude layout="510.0,320.0,20.0,50.0" ord="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/TrafficLight.px">
+          <Ord name="lightOrd" value="slot:J/points/E"/>
+        </PxInclude>
+
+        <Label layout="475.0,340.0,30.0,20.0" text="J" font="16.0pt SansSerif" background="white"/>
+
+        <PxInclude layout="480.0,370.0,20.0,50.0" ord="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/TrafficLight.px">
+          <Ord name="lightOrd" value="slot:J/points/S"/>
+        </PxInclude>
+
+        <PxInclude layout="600.0,290.0,20.0,50.0" ord="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/TrafficLight.px">
+          <Ord name="lightOrd" value="slot:K/points/N"/>
+        </PxInclude>
+
+        <PxInclude layout="570.0,330.0,20.0,50.0" ord="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/TrafficLight.px">
+          <Ord name="lightOrd" value="slot:K/points/W"/>
+        </PxInclude>
+
+        <PxInclude layout="630.0,330.0,20.0,50.0" ord="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/TrafficLight.px">
+          <Ord name="lightOrd" value="slot:K/points/E"/>
+        </PxInclude>
+
+        <Label layout="595.0,350.0,30.0,20.0" text="K" font="16.0pt SansSerif" background="white"/>
+
+        <PxInclude layout="600.0,380.0,20.0,50.0" ord="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/TrafficLight.px">
+          <Ord name="lightOrd" value="slot:K/points/S"/>
+        </PxInclude>
+
+        <PxInclude layout="720.0,200.0,20.0,50.0" ord="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/TrafficLight.px">
+          <Ord name="lightOrd" value="slot:F/points/S"/>
+        </PxInclude>
+
+        <PxInclude layout="720.0,120.0,20.0,50.0" ord="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/TrafficLight.px">
+          <Ord name="lightOrd" value="slot:F/points/N"/>
+        </PxInclude>
+
+        <Label layout="715.0,175.0,30.0,20.0" text="F" font="16.0pt SansSerif" background="white"/>
+
+        <PxInclude layout="750.0,160.0,20.0,50.0" ord="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/TrafficLight.px">
+          <Ord name="lightOrd" value="slot:F/points/E"/>
+        </PxInclude>
+
+        <PxInclude layout="690.0,160.0,20.0,50.0" ord="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/TrafficLight.px">
+          <Ord name="lightOrd" value="slot:F/points/W"/>
+        </PxInclude>
+
+        <PxInclude layout="710.0,390.0,20.0,50.0" ord="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/TrafficLight.px">
+          <Ord name="lightOrd" value="slot:L/points/S"/>
+        </PxInclude>
+
+        <PxInclude layout="710.0,310.0,20.0,50.0" ord="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/TrafficLight.px">
+          <Ord name="lightOrd" value="slot:L/points/N"/>
+        </PxInclude>
+
+        <Label layout="705.0,365.0,30.0,20.0" text="L" font="16.0pt SansSerif" background="white"/>
+
+        <PxInclude layout="740.0,350.0,20.0,50.0" ord="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/TrafficLight.px">
+          <Ord name="lightOrd" value="slot:L/points/E"/>
+        </PxInclude>
+
+        <PxInclude layout="680.0,350.0,20.0,50.0" ord="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/TrafficLight.px">
+          <Ord name="lightOrd" value="slot:L/points/W"/>
+        </PxInclude>
+
+        <PxInclude layout="260.0,510.0,20.0,50.0" ord="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/TrafficLight.px">
+          <Ord name="lightOrd" value="slot:M/points/S"/>
+        </PxInclude>
+
+        <PxInclude layout="260.0,430.0,20.0,50.0" ord="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/TrafficLight.px">
+          <Ord name="lightOrd" value="slot:M/points/N"/>
+        </PxInclude>
+
+        <Label layout="255.0,485.0,30.0,20.0" text="M" font="16.0pt SansSerif" background="white"/>
+
+        <PxInclude layout="290.0,470.0,20.0,50.0" ord="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/TrafficLight.px">
+          <Ord name="lightOrd" value="slot:M/points/E"/>
+        </PxInclude>
+
+        <PxInclude layout="230.0,470.0,20.0,50.0" ord="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/TrafficLight.px">
+          <Ord name="lightOrd" value="slot:M/points/W"/>
+        </PxInclude>
+
+        <PxInclude layout="370.0,530.0,20.0,50.0" ord="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/TrafficLight.px">
+          <Ord name="lightOrd" value="slot:N/points/S"/>
+        </PxInclude>
+
+        <PxInclude layout="370.0,450.0,20.0,50.0" ord="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/TrafficLight.px">
+          <Ord name="lightOrd" value="slot:N/points/N"/>
+        </PxInclude>
+
+        <Label layout="365.0,505.0,30.0,20.0" text="N" font="16.0pt SansSerif" background="white"/>
+
+        <PxInclude layout="400.0,490.0,20.0,50.0" ord="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/TrafficLight.px">
+          <Ord name="lightOrd" value="slot:N/points/E"/>
+        </PxInclude>
+
+        <PxInclude layout="340.0,490.0,20.0,50.0" ord="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/TrafficLight.px">
+          <Ord name="lightOrd" value="slot:N/points/W"/>
+        </PxInclude>
+
+        <PxInclude layout="480.0,540.0,20.0,50.0" ord="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/TrafficLight.px">
+          <Ord name="lightOrd" value="slot:O/points/S"/>
+        </PxInclude>
+
+        <PxInclude layout="480.0,460.0,20.0,50.0" ord="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/TrafficLight.px">
+          <Ord name="lightOrd" value="slot:O/points/N"/>
+        </PxInclude>
+
+        <Label layout="475.0,515.0,30.0,20.0" text="O" font="16.0pt SansSerif" background="white"/>
+
+        <PxInclude layout="510.0,500.0,20.0,50.0" ord="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/TrafficLight.px">
+          <Ord name="lightOrd" value="slot:O/points/E"/>
+        </PxInclude>
+
+        <PxInclude layout="450.0,500.0,20.0,50.0" ord="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/TrafficLight.px">
+          <Ord name="lightOrd" value="slot:O/points/W"/>
+        </PxInclude>
+
+        <PxInclude layout="590.0,540.0,20.0,50.0" ord="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/TrafficLight.px">
+          <Ord name="lightOrd" value="slot:P/points/S"/>
+        </PxInclude>
+
+        <PxInclude layout="590.0,460.0,20.0,50.0" ord="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/TrafficLight.px">
+          <Ord name="lightOrd" value="slot:P/points/N"/>
+        </PxInclude>
+
+        <Label layout="585.0,515.0,30.0,20.0" text="P" font="16.0pt SansSerif" background="white"/>
+
+        <PxInclude layout="620.0,500.0,20.0,50.0" ord="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/TrafficLight.px">
+          <Ord name="lightOrd" value="slot:P/points/E"/>
+        </PxInclude>
+
+        <PxInclude layout="560.0,500.0,20.0,50.0" ord="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/TrafficLight.px">
+          <Ord name="lightOrd" value="slot:P/points/W"/>
+        </PxInclude>
+
+        <PxInclude layout="700.0,540.0,20.0,50.0" ord="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/TrafficLight.px">
+          <Ord name="lightOrd" value="slot:Q/points/S"/>
+        </PxInclude>
+
+        <PxInclude layout="700.0,460.0,20.0,50.0" ord="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/TrafficLight.px">
+          <Ord name="lightOrd" value="slot:Q/points/N"/>
+        </PxInclude>
+
+        <Label layout="695.0,515.0,30.0,20.0" text="Q" font="16.0pt SansSerif" background="white"/>
+
+        <PxInclude layout="730.0,500.0,20.0,50.0" ord="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/TrafficLight.px">
+          <Ord name="lightOrd" value="slot:Q/points/E"/>
+        </PxInclude>
+
+        <PxInclude layout="670.0,500.0,20.0,50.0" ord="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/TrafficLight.px">
+          <Ord name="lightOrd" value="slot:Q/points/W"/>
+        </PxInclude>
+
+        <PxInclude layout="210.0,100.0,20.0,50.0" ord="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/TrafficLight.px">
+          <Ord name="lightOrd" value="slot:A/points/E"/>
+        </PxInclude>
+
+      </CanvasPane>
+
+    </ScrollPane>
+  </content>
+</px>

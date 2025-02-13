@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright 2024 Tridium, Inc. All Rights Reserved. This code is supplied as example code only and is not intended for use in production.
+  -->
+
+<!-- Niagara Presentation XML -->
+<px version="1.0" media="workbench:WbPxMedia">
+  <import>
+    <module name="baja"/>
+    <module name="bajaui"/>
+    <module name="converters"/>
+    <module name="gx"/>
+    <module name="kitPx"/>
+  </import>
+  <content>
+    <ScrollPane>
+
+      <CanvasPane name="content" viewSize="800.0,600.0" scale="fitRatio" minScaleFactor="0.5" maxScaleFactor="1.0">
+
+        <Label layout="0.0,0.0,800.0,600.0" image="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/images/mapSingle.jpg"/>
+
+        <PxInclude layout="390.0,210.0,20.0,50.0" ord="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/TrafficLight.px">
+          <Ord name="lightOrd" value="slot:points/N"/>
+        </PxInclude>
+
+        <PxInclude layout="390.0,320.0,20.0,50.0" ord="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/TrafficLight.px">
+          <Ord name="lightOrd" value="slot:points/S"/>
+        </PxInclude>
+
+        <PxInclude layout="350.0,260.0,20.0,50.0" ord="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/TrafficLight.px">
+          <Ord name="lightOrd" value="slot:points/W"/>
+        </PxInclude>
+
+        <PxInclude layout="430.0,260.0,20.0,50.0" ord="module://trafficLightServer/com/tridiumuniversity/trafficLightServer/px/TrafficLight.px">
+          <Ord name="lightOrd" value="slot:points/E"/>
+        </PxInclude>
+
+        <BoundLabel layout="375.0,275.0,50.0,20.0" font="16.0pt SansSerif" background="white">
+          <BoundLabelBinding ord="slot:" statusEffect="none">
+            <ObjectToString name="text" format="%name%"/>
+          </BoundLabelBinding>
+        </BoundLabel>
+
+      </CanvasPane>
+
+    </ScrollPane>
+  </content>
+</px>

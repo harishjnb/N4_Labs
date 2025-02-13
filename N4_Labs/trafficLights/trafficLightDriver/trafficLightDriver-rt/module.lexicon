@@ -1,0 +1,11 @@
+#
+# Lexicon for the trafficLightDriver module.
+#
+
+# Pinging
+ping.unexpectedResponseType=Ping response has unexpected type
+ping.failed=Ping failed
+
+# Polling
+poll.invalidType=Control point has invalid type
+poll.notFound=Control point was not found on remote device

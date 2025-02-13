@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f62777bd-daa9-4596-a472-6560d14a31ac" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../N4_Labs/trafficLights/devTrafficLights/devTrafficLights-ux/src/com/tridiumuniversity/devtrafficlights/ux/BTrafficLightWidget.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../N4_Labs/trafficLights/devTrafficLights/devTrafficLights-ux/src/rc/TrafficLightWidget.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../N4_Labs/trafficLights/devTrafficLights/devTrafficLights-ux/src/rc/TrafficLightWidget.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practice/prac/prac-rt/src/com/tridiumuniversity/prac/BMyState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practice/prac/prac-rt/src/com/tridiumuniversity/prac/BPracService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practice/prac/prac-rt/src/com/tridiumuniversity/prac/BPracWorker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practice/prac/prac-rt/src/com/tridiumuniversity/prac/BRectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../N4_Labs/trafficLights/.gradle/7.6/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../N4_Labs/trafficLights/.gradle/7.6/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../N4_Labs/trafficLights/.gradle/7.6/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../N4_Labs/trafficLights/.gradle/7.6/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../N4_Labs/trafficLights/.gradle/7.6/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../N4_Labs/trafficLights/.gradle/7.6/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../N4_Labs/trafficLights/.gradle/7.6/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../N4_Labs/trafficLights/.gradle/7.6/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../N4_Labs/trafficLights/.gradle/7.6/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../N4_Labs/trafficLights/.gradle/7.6/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../N4_Labs/trafficLights/.gradle/7.6/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../N4_Labs/trafficLights/.gradle/7.6/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../N4_Labs/trafficLights/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../N4_Labs/trafficLights/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../N4_Labs/trafficLights/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/../N4_Labs/trafficLights/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../N4_Labs/trafficLights/devTrafficLights/devTrafficLights-rt/build/libs/devTrafficLights-rt.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../N4_Labs/trafficLights/devTrafficLights/devTrafficLights-rt/build/libs/devTrafficLights-rt.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../N4_Labs/trafficLights/devTrafficLights/devTrafficLights-ux/module-include.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../N4_Labs/trafficLights/devTrafficLights/devTrafficLights-ux/module-include.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Review Assignments/ramakrishnan_harish_review/ramakrishnan_harish_review-rt/src/com/tridiumuniversity/ramakrishnan_harish_review/BReviewService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Review Assignments/ramakrishnan_harish_review/ramakrishnan_harish_review-rt/src/com/tridiumuniversity/ramakrishnan_harish_review/BReviewService.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2sXgAthPouofkfjgLkKixm9FGfp" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f62777bd-daa9-4596-a472-6560d14a31ac" name="Changes" comment="" />
+      <created>1738607199874</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1738607199874</updated>
+    </task>
+    <servers />
+  </component>
+</project>

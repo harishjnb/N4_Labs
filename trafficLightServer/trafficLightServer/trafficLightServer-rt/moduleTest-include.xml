@@ -1,0 +1,27 @@
+<!--
+  ~ Copyright 2024 Tridium, Inc. All Rights Reserved. This code is supplied as example code only and is not intended for use in production.
+  -->
+
+<types>
+  <!--test.com.tridiumuniversity.trafficLightServer-->
+  <type class="test.com.tridiumuniversity.trafficLightServer.BTestTrafficLightServerNetwork" name="TestTrafficLightServerNetwork"/>
+  <type class="test.com.tridiumuniversity.trafficLightServer.BTrafficLightServerDeviceTest" name="TrafficLightServerDeviceTest"/>
+  <type class="test.com.tridiumuniversity.trafficLightServer.BTrafficLightServerNetworkTest" name="TrafficLightServerNetworkTest"/>
+  <!--test.com.tridiumuniversity.trafficLightServer.comm-->
+  <type class="test.com.tridiumuniversity.trafficLightServer.comm.BTrafficLightServerLinkMessageTest" name="TrafficLightServerLinkMessageTest"/>
+  <type class="test.com.tridiumuniversity.trafficLightServer.comm.BTrafficLightServerListenerTest" name="TrafficLightServerListenerTest"/>
+  <!--test.com.tridiumuniversity.trafficLightServer.message-->
+  <type class="test.com.tridiumuniversity.trafficLightServer.message.BTrafficLightProtocolTest" name="TrafficLightProtocolTest"/>
+  <type class="test.com.tridiumuniversity.trafficLightServer.message.BTrafficLightServerMessageFactoryTest" name="TrafficLightServerMessageFactoryTest"/>
+  <!--test.com.tridiumuniversity.trafficLightServer.message.req-->
+  <type class="test.com.tridiumuniversity.trafficLightServer.message.req.BTrafficLightServerGetIntersectionReqTest" name="TrafficLightServerGetIntersectionReqTest"/>
+  <type class="test.com.tridiumuniversity.trafficLightServer.message.req.BTrafficLightServerPingIntersectionReqTest" name="TrafficLightServerPingIntersectionReqTest"/>
+  <type class="test.com.tridiumuniversity.trafficLightServer.message.req.BTrafficLightServerSetLightReqTest" name="TrafficLightServerSetLightReqTest"/>
+  <!--test.com.tridiumuniversity.trafficLightServer.message.resp-->
+  <type class="test.com.tridiumuniversity.trafficLightServer.message.resp.BTrafficLightServerDiscoverRespTest" name="TrafficLightServerDiscoverRespTest"/>
+  <type class="test.com.tridiumuniversity.trafficLightServer.message.resp.BTrafficLightServerGenericErrorRespTest" name="TrafficLightServerGenericErrorRespTest"/>
+  <type class="test.com.tridiumuniversity.trafficLightServer.message.resp.BTrafficLightServerGetIntersectionRespTest" name="TrafficLightServerGetIntersectionRespTest"/>
+  <type class="test.com.tridiumuniversity.trafficLightServer.message.resp.BTrafficLightServerPingIntersectionRespTest" name="TrafficLightServerPingIntersectionRespTest"/>
+  <type class="test.com.tridiumuniversity.trafficLightServer.message.resp.BTrafficLightServerPingNetworkRespTest" name="TrafficLightServerPingNetworkRespTest"/>
+  <type class="test.com.tridiumuniversity.trafficLightServer.message.resp.BTrafficLightServerSetLightRespTest" name="TrafficLightServerSetLightRespTest"/>
+</types>

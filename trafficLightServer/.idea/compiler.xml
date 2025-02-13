@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Gradle Imported" enabled="true">
+        <outputRelativeToContentRoot value="true" />
+        <option name="niagara.module.root" value="F:\Niagara\N4_Labs_Home\trafficLightServer\trafficLightServer\trafficLightServer-rt" />
+        <option name="niagara.test.roots" value="srcTest=java" />
+        <processorPath useClasspath="false">
+          <entry name="$PROJECT_DIR$/../../niagara-4.14.0.162/bin/ext/nre.jar" />
+        </processorPath>
+        <module name="trafficLightServer.trafficLightServer-rt.moduleTest" />
+        <module name="trafficLightServer.trafficLightServer-rt.main" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="1.8" />
+  </component>
+</project>
