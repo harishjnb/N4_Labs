@@ -6,4 +6,5 @@
   <type class="com.tridiumuniversity.prac.BMyState" name="MyState"/>
   <type class="com.tridiumuniversity.prac.BPracJob" name="PracJob"/>
   <type class="com.tridiumuniversity.prac.BPracJobService" name="PracJobService"/>
+  <type class="com.tridiumuniversity.prac.BPracTService" name="PracTService"/>
 </types>

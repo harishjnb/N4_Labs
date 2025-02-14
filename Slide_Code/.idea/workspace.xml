@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f62777bd-daa9-4596-a472-6560d14a31ac" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Practice/prac/prac-rt/src/com/tridiumuniversity/prac/BPracTService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practice/.gradle/7.6/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../Practice/.gradle/7.6/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
